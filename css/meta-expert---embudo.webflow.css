@@ -1,0 +1,8192 @@
+:root {
+  --elements-webflow-library--neutral--800: #213d32;
+  --elements-webflow-library--accent--primary-1: #155951;
+  --elements-webflow-library--neutral--700: #4a4566;
+  --elements-webflow-library--general--shadow-02: rgba(20, 20, 43, .08);
+  --elements-webflow-library--neutral--300: #eff6f5;
+  --elements-webflow-library--neutral--100: white;
+  --primary-1-light: var(--elements-webflow-library--neutral--600);
+  --elements-webflow-library--neutral--600: #6e9190;
+  --elements-webflow-library--general--shadow-03: rgba(20, 20, 43, .1);
+  --primary-3: white;
+  --white: white;
+  --elements-webflow-library--general--shadow-04: rgba(20, 20, 43, .14);
+  --elements-webflow-library--secondary--color-1: #281ca5;
+  --elements-webflow-library--neutral--400: #dcddeb;
+  --elements-webflow-library--general--shadow-01: rgba(20, 20, 43, .06);
+  --elements-webflow-library--secondary--color-2: #f1fffd;
+  --elements-webflow-library--accent--color: rgba(21, 89, 81, .1);
+  --elements-webflow-library--neutral--200: #f7f7fc;
+  --primary-2: #3e3e3e;
+  --elements-webflow-library--accent--color-2: #114d46;
+  --navbar-background: #3e3e3e;
+  --navbar: #382f2f;
+  --elements-webflow-library--neutral--500: #a0a3bd;
+  --elements-webflow-library--general--shadow-05: rgba(0, 0, 0, .5);
+  --black: black;
+  --shadow-06: white;
+  --verde-claro: rgba(21, 89, 81, .1);
+}
+
+.w-layout-grid {
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.brix---hamburger-menu-bar-bottom, .brix---hamburger-menu-bar-top {
+  background-color: var(--elements-webflow-library--neutral--800);
+  border-radius: 20px;
+  width: 52px;
+  height: 4px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.brix---hamburger-menu-wrapper {
+  padding: 0;
+  transition: transform .3s;
+}
+
+.brix---hamburger-menu-wrapper:hover {
+  transform: scale(.96);
+}
+
+.brix---hamburger-menu-wrapper.w--open {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.brix---header-big-nav-link {
+  color: var(--elements-webflow-library--neutral--800);
+  padding: 0;
+  font-size: 40px;
+  line-height: 42px;
+  transition: color .3s;
+}
+
+.brix---header-big-nav-link:hover {
+  color: var(--elements-webflow-library--accent--primary-1);
+}
+
+.brix---header-nav-list-item-hamburger-desktop {
+  margin-bottom: 24px;
+  padding-left: 0;
+}
+
+.brix---dropdown-link-big {
+  color: var(--elements-webflow-library--neutral--700);
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  font-size: 28px;
+  line-height: 36px;
+  text-decoration: none;
+  transition: color .3s;
+  display: flex;
+}
+
+.brix---dropdown-link-big:hover {
+  color: var(--elements-webflow-library--accent--primary-1);
+}
+
+.brix---dropdown-links-grid-big {
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.brix---dropdown-card-desktop {
+  background-color: rgba(0, 0, 0, 0);
+  top: 32px;
+  overflow: visible;
+}
+
+.brix---dropdown-column-wrapper-hamburger {
+  background-color: rgba(0, 0, 0, 0);
+  padding-top: 32px;
+  position: static;
+}
+
+.brix---dropdown-chevron-big {
+  width: 28px;
+  margin-left: 10px;
+}
+
+.brix---dropdown-toggle-big-link {
+  align-items: center;
+  padding: 0;
+  font-size: 40px;
+  line-height: 42px;
+  transition: color .3s;
+  display: flex;
+}
+
+.brix---dropdown-toggle-big-link:hover {
+  color: var(--elements-webflow-library--accent--primary-1);
+}
+
+.brix---header-nav-menu-hamburger-desktop {
+  z-index: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.metaexpert--container-default-center {
+  max-width: 1218px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.brix---header-hamburger-desktop-wrapper {
+  border-top: 1px solid var(--elements-webflow-library--neutral--300);
+  border-bottom: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  padding: 44px 24px;
+}
+
+.brix---header-right-col {
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
+.metaexpert--header-logo {
+  max-width: 250px;
+}
+
+.metaexpert--header-logo.metaexpert--logo-v14 {
+  cursor: pointer;
+  width: 120px;
+  height: 50px;
+}
+
+.brix---header-logo-link {
+  transform-style: preserve-3d;
+  padding-left: 0;
+  transition: transform .3s, color .3s;
+}
+
+.brix---header-logo-link:hover {
+  transform: scale3d(.96, .96, 1.01);
+}
+
+.brix---header-content-wrapper {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.brix---container-default {
+  max-width: 1218px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 28px;
+  padding-right: 28px;
+  display: block;
+}
+
+.brix---header-wrapper {
+  background-color: var(--elements-webflow-library--neutral--100);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+}
+
+.metaexpert---btn-primary-small {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+  text-align: center;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  border: 2px solid #155951;
+  border-radius: 48px;
+  justify-content: center;
+  padding: 18px 24px;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+}
+
+.metaexpert---btn-primary-small:hover {
+  background-color: var(--primary-1-light);
+  color: var(--elements-webflow-library--neutral--100);
+  border: 2px solid #155951;
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---btn-header-hidden-on-mbl {
+  margin-left: 24px;
+}
+
+.brix---header-nav-list-item-show-in-tablet {
+  margin-bottom: 0;
+  padding-left: 32px;
+  display: none;
+}
+
+.brix---header-nav-link {
+  color: #fff;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  transition: color .3s;
+}
+
+.brix---header-nav-link:hover {
+  color: #8af8eb;
+}
+
+.brix---header-nav-list-item-left {
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 32px;
+  font-size: 14px;
+}
+
+.brix---dropdown-link {
+  color: var(--elements-webflow-library--neutral--600);
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+  transition: color .3s;
+  display: flex;
+}
+
+.brix---dropdown-link:hover {
+  color: var(--elements-webflow-library--accent--primary-1);
+}
+
+.brix---dropdown-links-grid {
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.brix---dropdown-pd {
+  padding: 40px;
+}
+
+.brix---dropdown-card {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 12px 0 var(--elements-webflow-library--general--shadow-02);
+  border-radius: 20px;
+  min-width: 280px;
+  top: 32px;
+  overflow: hidden;
+}
+
+.brix---dropdown-column-wrapper {
+  background-color: rgba(0, 0, 0, 0);
+  padding-top: 32px;
+  transform: translate(0);
+}
+
+.brix---dropdown-column-wrapper.w--open {
+  transform: translate(-50%);
+}
+
+.brix---dropdown-chevron {
+  width: 14px;
+  margin-left: 6px;
+}
+
+.brix---dropdown-toggle {
+  color: var(--elements-webflow-library--neutral--800);
+  align-items: center;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  transition: color .3s;
+  display: flex;
+}
+
+.brix---dropdown-toggle:hover {
+  color: var(--elements-webflow-library--accent--primary-1);
+}
+
+.brix---header-nav-menu-list {
+  z-index: 1;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.brix---header-logo-link-left {
+  transform-style: preserve-3d;
+  padding-left: 0;
+  padding-right: 40px;
+  transition: transform .3s, color .3s;
+}
+
+.brix---header-logo-link-left:hover {
+  transform: scale3d(.96, .96, 1.01);
+}
+
+.brix---header-left-col {
+  align-items: center;
+  font-size: 14px;
+  display: flex;
+}
+
+.brix---header-wrapper-rounded {
+  color: #1f1e1e;
+  background-color: #313532;
+  border-radius: 130px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: Montserrat, sans-serif;
+  box-shadow: 0 3px 10px rgba(33, 31, 84, .08);
+}
+
+.brix---opacity-10 {
+  opacity: .1;
+}
+
+.brix---floating-image-hero-v6---1 {
+  z-index: -1;
+  max-width: 600px;
+  position: absolute;
+  top: auto;
+  bottom: 41%;
+  left: auto;
+  right: -12%;
+  transform: rotate(140deg);
+}
+
+.brix---mg-top-80px {
+  margin-top: 80px;
+}
+
+.brix---text-200-list-bold {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.brix---color-neutral-800 {
+  color: var(--elements-webflow-library--neutral--800);
+  font-size: 78px;
+}
+
+.brix---icon-list {
+  width: 30px;
+  max-width: 30px;
+  margin-right: 16px;
+}
+
+.brix---icon-list-item-wrapper {
+  align-items: center;
+  display: flex;
+}
+
+.brix---grid-3-icon-list {
+  grid-column-gap: 56px;
+  grid-row-gap: 28px;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto;
+  grid-auto-columns: 1fr;
+  justify-content: center;
+  align-items: stretch;
+  justify-items: start;
+  margin-top: 0;
+  display: grid;
+}
+
+.brix---error-message {
+  color: #ff5a65;
+  text-align: center;
+  background-color: #ffeff0;
+  border-radius: 16px;
+  margin-top: 20px;
+  padding: 20px 24px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.brix---icon-success-message-left {
+  margin-right: 10px;
+}
+
+.brix---flex-horizontal---vertical-mbp {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.brix---success-message {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+  border-radius: 24px;
+  padding: 28px 28px 32px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.brix---btn-primary {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+  text-align: center;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  justify-content: center;
+  padding: 1.5rem 38px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+}
+
+.brix---btn-primary:hover {
+  background-color: var(--primary-1-light);
+  color: var(--elements-webflow-library--neutral--100);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---input {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 7px 0 var(--elements-webflow-library--general--shadow-02);
+  border-radius: 100px;
+  min-height: 70px;
+  margin-bottom: 0;
+  padding: 16px 24px;
+  font-size: 16px;
+  line-height: 20px;
+  transition: box-shadow .3s, color .3s, border-color .3s;
+}
+
+.brix---input:hover {
+  border-color: var(--elements-webflow-library--accent--primary-1);
+  box-shadow: 0 2px 12px 0 var(--elements-webflow-library--general--shadow-03);
+}
+
+.brix---input:focus {
+  border-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--800);
+}
+
+.brix---input::placeholder {
+  color: var(--elements-webflow-library--neutral--600);
+  font-size: 16px;
+}
+
+.brix---grid-subscribe-form-button-left {
+  grid-template-rows: auto;
+  grid-template-columns: 1fr auto;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brix---mg-bottom-56px {
+  margin-bottom: 56px;
+}
+
+.brix---paragraph-default {
+  color: var(--elements-webflow-library--neutral--800);
+  margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.brix---color-neutral-600 {
+  color: var(--elements-webflow-library--neutral--600);
+}
+
+.brix---mg-bottom-40px {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.brix---heading-h1-size {
+  color: var(--primary-3);
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 0;
+  font-weight: 700;
+  line-height: 66px;
+}
+
+.brix---text-center {
+  text-align: center;
+}
+
+.brix---inner-container-600px---center {
+  max-width: 1200px;
+  margin-bottom: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  background-color: var(--white);
+  padding-top: 5rem;
+  padding-bottom: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.brix---heading-h3-size {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.brix---color-neutral-801 {
+  color: var(--elements-webflow-library--neutral--800);
+}
+
+.brix---color-accent-1 {
+  color: var(--elements-webflow-library--accent--primary-1);
+}
+
+.brix---display-2 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 84px;
+}
+
+.brix---grid-4-columns {
+  grid-column-gap: 28px;
+  grid-row-gap: 28px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.brix---heading-h2-size {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.brix---section {
+  background-color: var(--primary-3);
+  color: var(--elements-webflow-library--neutral--100);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.brix---mg-bottom-0 {
+  margin-bottom: 0;
+}
+
+.brix---heading-h5-size {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.brix---color-neutral-802 {
+  color: var(--elements-webflow-library--neutral--800);
+}
+
+.brix---mg-bottom-8px {
+  margin-bottom: 8px;
+}
+
+.brix---grid-2-columns-2-col-mbl {
+  grid-column-gap: 28px;
+  grid-row-gap: 28px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  align-items: start;
+  display: grid;
+}
+
+.brix---mg-bottom-32px {
+  margin-bottom: 32px;
+}
+
+.brix---mg-bottom-24px {
+  margin-bottom: 24px;
+}
+
+.brix---subtitle {
+  color: var(--elements-webflow-library--accent--primary-1);
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.brix---image-wrapper-br-24px-shadow {
+  box-shadow: 0 14px 42px 0 var(--elements-webflow-library--general--shadow-04);
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.brix---grid-2-columns-text {
+  grid-column-gap: 64px;
+  grid-row-gap: 28px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  display: grid;
+}
+
+.brix---btn-primary-full-width {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 26px 38px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+}
+
+.brix---btn-primary-full-width:hover {
+  background-color: var(--elements-webflow-library--secondary--color-1);
+  color: var(--elements-webflow-library--neutral--100);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---grid-1-column-gap-row-16px {
+  grid-row-gap: 16px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.brix---divider-40px {
+  background-color: var(--elements-webflow-library--neutral--400);
+  height: 1px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.brix---paragraph-default-2 {
+  color: var(--primary-3);
+  margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.brix---color-neutral-803 {
+  color: var(--elements-webflow-library--neutral--600);
+}
+
+.brix---text-300-medium {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.brix---mg-right-8px {
+  margin-right: 8px;
+}
+
+.brix---flex-horizontal-start {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.brix---pricing-content-v2 {
+  padding: 40px 28px;
+}
+
+.brix---card {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 7px 0 var(--elements-webflow-library--general--shadow-01);
+  border-radius: 24px;
+}
+
+.brix---btn-primary-white-full-width {
+  background-color: var(--elements-webflow-library--neutral--100);
+  color: var(--elements-webflow-library--accent--primary-1);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 26px 38px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+}
+
+.brix---btn-primary-white-full-width:hover {
+  background-color: var(--elements-webflow-library--secondary--color-2);
+  color: var(--elements-webflow-library--accent--primary-1);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---color-neutral-100 {
+  color: var(--elements-webflow-library--neutral--100);
+}
+
+.brix---badge-secondary-small-bold {
+  border: 1px solid var(--elements-webflow-library--neutral--400);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 12px 0 var(--elements-webflow-library--general--shadow-01);
+  color: var(--elements-webflow-library--neutral--800);
+  text-align: center;
+  border-radius: 40px;
+  padding: 14px 22px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.brix---badge-wrapper-top-right {
+  position: absolute;
+  top: 20px;
+  bottom: auto;
+  left: auto;
+  right: 20px;
+}
+
+.brix---card-pricing-popular {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  box-shadow: 0 2px 7px 0 var(--elements-webflow-library--general--shadow-01);
+  border-radius: 24px;
+  position: relative;
+}
+
+.brix---3-columns-1-col-tablet {
+  grid-column-gap: 28px;
+  grid-row-gap: 28px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.brix---tabs-content {
+  overflow: visible;
+}
+
+.brix---badge-secondary---tabs {
+  border: 1px solid var(--elements-webflow-library--neutral--400);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 12px 0 var(--elements-webflow-library--general--shadow-01);
+  color: var(--elements-webflow-library--neutral--800);
+  text-align: center;
+  border-radius: 40px;
+  margin-left: 12px;
+  margin-right: 12px;
+  padding: 18px 28px;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color .3s, border-color .3s, color .3s;
+  display: inline-block;
+}
+
+.brix---badge-secondary---tabs:hover, .brix---badge-secondary---tabs.w--current {
+  border-color: var(--elements-webflow-library--accent--primary-1);
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+}
+
+.brix---tabs-menu {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.brix---inner-container-700px-center {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brix---mg-bottom-48px {
+  margin-bottom: 48px;
+}
+
+.brix---bg-image-full-width {
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.brix---btn-secondary {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  color: var(--elements-webflow-library--neutral--800);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  padding: 26px 38px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  transition: border-color .3s, transform .3s, background-color .3s, color .3s;
+  box-shadow: 0 4px 10px rgba(20, 20, 43, .04);
+}
+
+.brix---btn-secondary:hover {
+  border-color: var(--elements-webflow-library--accent--primary-1);
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---button-row-left {
+  margin-right: 24px;
+}
+
+.brix---buttons-row {
+  align-items: center;
+  display: flex;
+}
+
+.brix---color-neutral-804 {
+  color: var(--elements-webflow-library--neutral--600);
+}
+
+.brix---mg-bottom-16px {
+  margin-bottom: 16px;
+}
+
+.brix---cta-v9-card {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 7px 0 var(--elements-webflow-library--general--shadow-01);
+  border-radius: 24px;
+  padding: 94px 62px;
+}
+
+.brix---grid-cta-v9 {
+  grid-column-gap: 28px;
+  grid-row-gap: 28px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr .6fr;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  display: grid;
+}
+
+.brix---cta-v9-section {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  position: relative;
+  overflow: hidden;
+}
+
+.brix---cta-v6-floating-item-02-2 {
+  position: absolute;
+  top: auto;
+  bottom: 24%;
+  left: auto;
+  right: 3%;
+}
+
+.brix---cta-v7-floating-item-01 {
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: auto;
+}
+
+.brix---mg-top-64px {
+  margin-top: 64px;
+}
+
+.brix---btn-secondary-white {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  color: var(--elements-webflow-library--neutral--100);
+  text-align: center;
+  transform-style: preserve-3d;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 48px;
+  padding: 26px 38px;
+  font-size: 18px;
+  line-height: 20px;
+  transition: border-color .3s, transform .3s, background-color .3s, color .3s;
+  box-shadow: 0 4px 10px rgba(20, 20, 43, .04);
+}
+
+.brix---btn-secondary-white:hover {
+  border-color: var(--elements-webflow-library--neutral--100);
+  background-color: var(--elements-webflow-library--neutral--100);
+  color: var(--elements-webflow-library--neutral--800);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---btn-primary-white {
+  background-color: var(--elements-webflow-library--neutral--100);
+  color: var(--elements-webflow-library--accent--primary-1);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  justify-content: center;
+  padding: 26px 38px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+}
+
+.brix---btn-primary-white:hover {
+  background-color: var(--elements-webflow-library--secondary--color-2);
+  color: var(--elements-webflow-library--accent--primary-1);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---buttons-row-center {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.brix---color-neutral-805 {
+  color: var(--elements-webflow-library--neutral--100);
+}
+
+.brix---inner-container-900px-center {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brix---z-index-1 {
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.brix---cta-v7-section {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  padding-top: 160px;
+  padding-bottom: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.brix---cta-v2-floating-item-02 {
+  position: absolute;
+  top: auto;
+  bottom: 15%;
+  left: auto;
+  right: -1%;
+}
+
+.brix---cta-v2-floating-item-01 {
+  z-index: 0;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: auto;
+}
+
+.brix---color-neutral-806 {
+  color: var(--elements-webflow-library--neutral--100);
+}
+
+.brix---cta-section {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  padding-top: 160px;
+  padding-bottom: 160px;
+  position: relative;
+  overflow: hidden;
+}
+
+.brix---half-bg-bottom {
+  z-index: -1;
+  background-color: var(--elements-webflow-library--accent--color);
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.brix---text-200-bold {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.brix---text-200 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.brix---big-icon-left {
+  border-radius: 16px;
+  margin-right: 16px;
+}
+
+.brix---card-link-icon-wrapper {
+  border: 1px solid var(--elements-webflow-library--neutral--200);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 6px 0 var(--elements-webflow-library--general--shadow-01);
+  color: var(--elements-webflow-library--neutral--600);
+  transform-style: preserve-3d;
+  border-radius: 14px;
+  align-items: center;
+  padding: 14px 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  text-decoration: none;
+  transition: transform .3s, border-color .3s, color .3s;
+  display: flex;
+}
+
+.brix---card-link-icon-wrapper:hover {
+  border-color: var(--elements-webflow-library--accent--primary-1);
+  transform: scale3d(.96, .96, 1.01);
+}
+
+.brix---grid-2-columns {
+  grid-column-gap: 28px;
+  grid-row-gap: 28px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  display: grid;
+}
+
+.brix---color-neutral-807 {
+  color: var(--elements-webflow-library--neutral--600);
+}
+
+.brix---inner-container-460px-center {
+  max-width: 460px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brix---color-neutral-808 {
+  color: var(--elements-webflow-library--neutral--100);
+}
+
+.brix---icon-success-message-big {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.brix---social-icon-square-30px {
+  background-color: var(--elements-webflow-library--secondary--color-2);
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  min-height: 30px;
+  text-decoration: none;
+  transition: transform .3s, background-color .3s, color .3s;
+  display: flex;
+}
+
+.brix---social-icon-square-30px:hover {
+  transform: scale(.92);
+}
+
+.brix---social-media-grid-right---mbp-center {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  flex: 1;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, 36px);
+  justify-content: end;
+  align-self: center;
+  justify-items: end;
+}
+
+.brix---text-area {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 7px 0 var(--elements-webflow-library--general--shadow-02);
+  border-radius: 22px;
+  min-height: 144px;
+  padding: 16px 24px;
+  font-size: 18px;
+  line-height: 28px;
+  transition: box-shadow .3s, color .3s, border-color .3s;
+}
+
+.brix---text-area:hover {
+  border-color: var(--elements-webflow-library--accent--primary-1);
+  box-shadow: 0 2px 12px 0 var(--elements-webflow-library--general--shadow-03);
+}
+
+.brix---text-area:focus {
+  border-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--800);
+}
+
+.brix---text-area::placeholder {
+  color: var(--elements-webflow-library--neutral--600);
+  font-size: 18px;
+}
+
+.brix---input-label {
+  color: var(--elements-webflow-library--neutral--800);
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.brix---form-grid-2-columns {
+  grid-column-gap: 28px;
+  grid-row-gap: 28px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  display: grid;
+}
+
+.brix---card-form-v2 {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 7px 0 var(--elements-webflow-library--general--shadow-01);
+  border-radius: 24px;
+  min-height: 620px;
+  margin-bottom: 0;
+  padding: 72px 78px;
+}
+
+.brix---mg-bottom-64px {
+  margin-bottom: 64px;
+}
+
+.brix---inner-container-752px-center {
+  max-width: 752px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brix---section-position-relative {
+  background-color: var(--elements-webflow-library--accent--color);
+  padding-top: 176px;
+  padding-bottom: 176px;
+  position: relative;
+  overflow: hidden;
+}
+
+.brix---paragraph-link {
+  color: var(--primary-3);
+  text-decoration: underline;
+  transition: color .3s;
+}
+
+.brix---paragraph-link:hover {
+  color: var(--elements-webflow-library--secondary--color-1);
+}
+
+.brix---color-neutral-809 {
+  color: var(--elements-webflow-library--neutral--600);
+}
+
+.brix---text-right---t-center {
+  text-align: right;
+}
+
+.brix---text-left---t-center {
+  text-align: left;
+}
+
+.brix---grid-footer-v11 {
+  grid-template-rows: auto;
+  align-items: center;
+}
+
+.brix---footer-small {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.brix---footer-wrapper {
+  border-top: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--primary-2);
+}
+
+.brix---icon-square-36px {
+  background-color: var(--elements-webflow-library--secondary--color-2);
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  min-width: 36px;
+  height: 36px;
+  min-height: 36px;
+  text-decoration: none;
+  transition: transform .3s, background-color .3s, color .3s;
+  display: flex;
+  overflow: hidden;
+}
+
+.brix---icon-square-36px:hover {
+  transform: scale(.92);
+}
+
+.brix---social-media-grid-right---t-center {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  flex: 1;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, 36px);
+  justify-content: end;
+  align-self: center;
+  justify-items: end;
+}
+
+.brix---footer-logo {
+  transform-style: preserve-3d;
+  width: 140px;
+  transition: transform .3s;
+}
+
+.brix---footer-logo:hover {
+  transform: scale3d(.97, .97, 1.01);
+}
+
+.brix---grid-footer-v12 {
+  grid-template-rows: auto;
+  grid-template-columns: 1fr .5fr 1fr;
+  align-items: center;
+}
+
+.brix---footer-bottom-v12 {
+  border-top: 1px solid var(--elements-webflow-library--neutral--300);
+  color: var(--elements-webflow-library--neutral--600);
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.brix---cta-v1-floating-item-02 {
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: auto;
+  right: -2%;
+}
+
+.brix---cta-v1-floating-item-01 {
+  z-index: 0;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: -1%;
+  right: auto;
+}
+
+.brix---btn-secondary-white-2 {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  color: var(--elements-webflow-library--neutral--100);
+  text-align: center;
+  transform-style: preserve-3d;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 48px;
+  padding: 1.5rem 38px;
+  font-size: 18px;
+  line-height: 20px;
+  transition: border-color .3s, transform .3s, background-color .3s, color .3s;
+  box-shadow: 0 4px 10px rgba(20, 20, 43, .04);
+}
+
+.brix---btn-secondary-white-2:hover {
+  border-color: var(--elements-webflow-library--neutral--100);
+  background-color: var(--elements-webflow-library--neutral--100);
+  color: var(--elements-webflow-library--neutral--800);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---btn-primary-white-2 {
+  background-color: var(--elements-webflow-library--neutral--100);
+  color: var(--elements-webflow-library--accent--primary-1);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  justify-content: center;
+  padding: 26px 38px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+}
+
+.brix---btn-primary-white-2:hover {
+  background-color: var(--elements-webflow-library--secondary--color-2);
+  color: var(--elements-webflow-library--accent--primary-1);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---button-row-left-2 {
+  margin-right: 24px;
+}
+
+.brix---buttons-row-center-2 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.brix---heading-h2-size-2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.brix---color-neutral-810 {
+  color: var(--elements-webflow-library--neutral--100);
+}
+
+.brix---mg-bottom-40px-2 {
+  margin-bottom: 40px;
+}
+
+.brix---text-center-2 {
+  text-align: center;
+}
+
+.brix---inner-container-600px---center-2 {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brix---cta-card {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  border-radius: 30px;
+  padding: 5rem 60px;
+  position: relative;
+}
+
+.brix---container-default-2 {
+  max-width: 1218px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.brix---section-small {
+  background-color: var(--primary-3);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.brix---cta-v1-floating-item-3 {
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: auto;
+  right: -2%;
+}
+
+.html-embed {
+  border-radius: 0;
+  margin-top: 0;
+  padding-top: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+.body {
+  background-color: var(--white);
+  font-family: Montserrat, sans-serif;
+}
+
+.bold-text {
+  font-family: Montserrat, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.brix---btn-primary-small {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  justify-content: center;
+  padding: 18px 24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+}
+
+.brix---btn-primary-small:hover {
+  color: var(--elements-webflow-library--neutral--100);
+  background-color: #1a685f;
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---btn-header-hidden-on-mbl-2 {
+  margin-left: 24px;
+}
+
+.brix---hamburger-menu-bar-bottom-2, .brix---hamburger-menu-bar-top-2 {
+  background-color: var(--elements-webflow-library--neutral--800);
+  border-radius: 20px;
+  width: 52px;
+  height: 4px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.brix---hamburger-menu-wrapper-2 {
+  padding: 0;
+  transition: transform .3s;
+}
+
+.brix---hamburger-menu-wrapper-2:hover {
+  transform: scale(.96);
+}
+
+.brix---hamburger-menu-wrapper-2.w--open {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.brix---header-nav-list-item-show-in-mbl {
+  margin-bottom: 0;
+  padding-left: 32px;
+  display: none;
+}
+
+.brix---header-nav-link-2 {
+  color: var(--primary-3);
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  transition: color .3s;
+}
+
+.brix---header-nav-link-2:hover {
+  color: var(--primary-3);
+}
+
+.brix---header-nav-list-item {
+  margin-bottom: 0;
+  padding-left: 32px;
+}
+
+.brix---dropdown-link-2 {
+  color: var(--elements-webflow-library--neutral--600);
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+  transition: color .3s;
+  display: flex;
+}
+
+.brix---dropdown-link-2:hover {
+  color: var(--elements-webflow-library--accent--primary-1);
+}
+
+.brix---dropdown-links-grid-2 {
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.brix---dropdown-pd-2 {
+  padding: 40px;
+}
+
+.brix---dropdown-card-2 {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 12px 0 var(--elements-webflow-library--general--shadow-02);
+  border-radius: 20px;
+  min-width: 280px;
+  top: 32px;
+  overflow: hidden;
+}
+
+.brix---dropdown-column-wrapper-2 {
+  background-color: rgba(0, 0, 0, 0);
+  padding-top: 32px;
+  transform: translate(0);
+}
+
+.brix---dropdown-column-wrapper-2.w--open {
+  transform: translate(-50%);
+}
+
+.brix---dropdown-chevron-2 {
+  width: 14px;
+  margin-left: 6px;
+}
+
+.brix---dropdown-toggle-2 {
+  color: var(--elements-webflow-library--neutral--800);
+  align-items: center;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  transition: color .3s;
+  display: flex;
+}
+
+.brix---dropdown-toggle-2:hover {
+  color: var(--elements-webflow-library--accent--primary-1);
+}
+
+.brix---header-nav-menu-list-2 {
+  z-index: 1;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.brix---header-nav-menu-list-2:hover {
+  flex-flow: column;
+}
+
+.brix---header-right-col-2 {
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
+.brix---header-logo {
+  max-width: 200px;
+}
+
+.brix---header-logo-link-2 {
+  transform-style: preserve-3d;
+  padding-left: 0;
+  transition: transform .3s, color .3s;
+}
+
+.brix---header-logo-link-2:hover {
+  transform: scale3d(.96, .96, 1.01);
+}
+
+.brix---header-content-wrapper-2 {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.brix---container-default-3 {
+  max-width: 1218px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.brix---header-wrapper-2 {
+  background-color: var(--primary-2);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  position: static;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.brix---link-icon-right {
+  margin-left: 6px;
+}
+
+.brix---link-wrapper-white {
+  color: var(--elements-webflow-library--neutral--100);
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  transition: none;
+  display: flex;
+}
+
+.brix---link-wrapper-white:hover {
+  color: var(--elements-webflow-library--neutral--100);
+}
+
+.brix---text-left---t-center-2 {
+  text-align: left;
+}
+
+.brix---top-bar-right-col {
+  margin-right: 24px;
+}
+
+.brix---top-bar-flex-h-sb {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.brix---top-bar-padding {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.navbar-2-3 {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+  text-align: center;
+  padding-left: 72px;
+  padding-right: 72px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.brix---paragraph-default-tittle-2 {
+  color: var(--elements-webflow-library--neutral--800);
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.brix---paragraph-default-tittle-1-copy {
+  color: var(--elements-webflow-library--neutral--800);
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 40px;
+  line-height: 30px;
+}
+
+.brix---paragraph-default-tittle-3-copy {
+  color: var(--elements-webflow-library--neutral--800);
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 80px;
+  line-height: 30px;
+}
+
+.bold-text-2 {
+  color: var(--primary-2);
+  font-size: 35px;
+}
+
+.bold-text-3 {
+  color: var(--elements-webflow-library--accent--primary-1);
+  line-height: 60px;
+}
+
+.bold-text-4 {
+  color: var(--primary-2);
+}
+
+.brix---mg-bottom-2 {
+  margin-bottom: 0;
+}
+
+.brix---paragraph-default-3 {
+  margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.brix---color-neutral-811 {
+  color: var(--elements-webflow-library--neutral--600);
+}
+
+.brix---heading-h5-size-2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.brix---color-neutral-812 {
+  color: var(--elements-webflow-library--neutral--800);
+}
+
+.brix---mg-bottom-8px-2 {
+  margin-bottom: 8px;
+}
+
+.brix---color-accent-2 {
+  color: var(--elements-webflow-library--accent--primary-1);
+}
+
+.brix---heading-h1-size-2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 66px;
+}
+
+.brix---grid-2-columns-2-col-mbl-2 {
+  grid-column-gap: 28px;
+  grid-row-gap: 28px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  align-items: start;
+  display: grid;
+}
+
+.brix---mg-bottom-32px-2 {
+  margin-bottom: 32px;
+}
+
+.brix---heading-h2-size-3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.brix---mg-bottom-24px-2 {
+  margin-bottom: 24px;
+}
+
+.brix---subtitle-2 {
+  color: var(--elements-webflow-library--accent--primary-1);
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.brix---image-2 {
+  background-image: url('../images/about-image.png');
+  background-position: 0 0;
+  background-size: auto;
+}
+
+.brix---image-wrapper-br-24px-shadow-2 {
+  box-shadow: 0 0 42px 0 var(--elements-webflow-library--general--shadow-04);
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.brix---grid-2-columns-text-2 {
+  grid-column-gap: 64px;
+  grid-row-gap: 28px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  display: grid;
+}
+
+.brix---container-default-4 {
+  max-width: 1218px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.about-us {
+  background-image: radial-gradient(circle farthest-corner at 100% 50%, var(--elements-webflow-library--general--shadow-01), white 15%);
+  color: var(--elements-webflow-library--neutral--100);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.brix---color-neutral-810-light {
+  color: var(--elements-webflow-library--neutral--100);
+}
+
+.brix---mg-bottom-40px-2-light {
+  margin-bottom: 0;
+}
+
+.brix---heading-h2-size-2-3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.brix---mg-bottom-40px-2-3 {
+  margin-bottom: 40px;
+}
+
+.brix---paragraph-default-3-3 {
+  margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.italic-text {
+  font-style: normal;
+}
+
+.italic-text-2 {
+  color: var(--primary-3);
+  font-style: normal;
+}
+
+.brix---paragraph-default-3-2 {
+  color: var(--primary-3);
+  margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.brix---subtitle-2-2 {
+  color: var(--primary-3);
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.div-block {
+  text-align: center;
+}
+
+.brix---paragraph-link-2 {
+  color: var(--primary-3);
+  text-decoration: underline;
+  transition: color .3s;
+}
+
+.brix---paragraph-link-2:hover {
+  color: var(--elements-webflow-library--accent--color-2);
+}
+
+.brix---paragraph-link-2.w--current:hover {
+  color: var(--primary-1-light);
+}
+
+.brix---mg-bottom-3 {
+  color: var(--primary-3);
+  margin-bottom: 0;
+}
+
+.brix---footer-logo-2 {
+  transform-style: preserve-3d;
+  transition: transform .3s;
+}
+
+.brix---footer-logo-2:hover {
+  transform: scale3d(.97, .97, 1.01);
+}
+
+.brix---grid-footer-logo---paragraph {
+  grid-template-rows: auto;
+  grid-template-columns: .3fr 1fr;
+  align-items: center;
+}
+
+.brix---footer-bottom-v4 {
+  border-top: 0px solid var(--elements-webflow-library--neutral--300);
+  color: var(--elements-webflow-library--neutral--600);
+  text-align: right;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.brix---container-default-5 {
+  max-width: 1218px;
+  min-height: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.brix---footer-wrapper-2 {
+  border-top: 0px none var(--elements-webflow-library--neutral--300);
+  background-color: var(--primary-2);
+  padding-top: 1.5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.brix---btn-primary-full-width-2 {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 26px 38px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+}
+
+.brix---btn-primary-full-width-2:hover {
+  background-color: var(--elements-webflow-library--accent--color-2);
+  color: var(--elements-webflow-library--neutral--100);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---text-200-list-bold-2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.brix---color-neutral-813 {
+  color: var(--elements-webflow-library--neutral--800);
+}
+
+.brix---icon-list-2 {
+  margin-right: 16px;
+}
+
+.brix---icon-list-item-wrapper-2 {
+  align-items: center;
+  display: flex;
+}
+
+.brix---grid-1-column-gap-row-16px-2 {
+  grid-row-gap: 16px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.brix---mg-bottom-40px-3 {
+  margin-bottom: 40px;
+}
+
+.brix---divider-40px-2 {
+  background-color: var(--elements-webflow-library--neutral--400);
+  height: 1px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.brix---paragraph-default-4 {
+  color: var(--primary-2);
+  max-width: 700px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.brix---color-neutral-814 {
+  color: var(--elements-webflow-library--neutral--600);
+}
+
+.brix---text-300-medium-2 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.brix---heading-h1-size-3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 66px;
+}
+
+.brix---mg-right-8px-2 {
+  margin-right: 8px;
+}
+
+.brix---flex-horizontal-start-2 {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.brix---heading-h3-size-2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.brix---mg-bottom-32px-3 {
+  margin-bottom: 32px;
+}
+
+.brix---pricing-content-v2-2 {
+  padding: 40px 28px;
+}
+
+.brix---card-2 {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 7px 0 var(--elements-webflow-library--general--shadow-01);
+  border-radius: 24px;
+}
+
+.brix---btn-primary-white-full-width-2 {
+  background-color: var(--elements-webflow-library--neutral--100);
+  color: var(--elements-webflow-library--accent--primary-1);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 26px 38px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+}
+
+.brix---btn-primary-white-full-width-2:hover {
+  background-color: var(--elements-webflow-library--secondary--color-2);
+  color: var(--elements-webflow-library--accent--primary-1);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---color-neutral-815 {
+  color: var(--elements-webflow-library--neutral--100);
+}
+
+.brix---badge-secondary-small-bold-2 {
+  border: 1px solid var(--elements-webflow-library--neutral--400);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 12px 0 var(--elements-webflow-library--general--shadow-01);
+  color: var(--elements-webflow-library--neutral--800);
+  text-align: center;
+  border-radius: 40px;
+  padding: 14px 22px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.brix---badge-wrapper-top-right-2 {
+  position: absolute;
+  top: 20px;
+  bottom: auto;
+  left: auto;
+  right: 20px;
+}
+
+.brix---card-pricing-popular-2 {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  box-shadow: 0 2px 7px 0 var(--elements-webflow-library--general--shadow-01);
+  border-radius: 24px;
+  position: relative;
+}
+
+.brix---3-columns-1-col-tablet-2 {
+  grid-column-gap: 28px;
+  grid-row-gap: 28px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.brix---tabs-content-2 {
+  overflow: visible;
+}
+
+.brix---badge-secondary---tabs-2 {
+  border: 1px solid var(--elements-webflow-library--neutral--400);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 12px 0 var(--elements-webflow-library--general--shadow-01);
+  color: var(--elements-webflow-library--neutral--800);
+  text-align: center;
+  border-radius: 40px;
+  margin-left: 12px;
+  margin-right: 12px;
+  padding: 18px 28px;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color .3s, border-color .3s, color .3s;
+  display: inline-block;
+}
+
+.brix---badge-secondary---tabs-2:hover, .brix---badge-secondary---tabs-2.w--current {
+  border-color: var(--elements-webflow-library--accent--primary-1);
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+}
+
+.brix---tabs-menu-2 {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.brix---subtitle-3 {
+  color: var(--elements-webflow-library--accent--primary-1);
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.brix---text-center-3 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.brix---inner-container-700px-center-2 {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brix---mg-bottom-48px-2 {
+  margin-bottom: 48px;
+}
+
+.pricing {
+  background-image: radial-gradient(circle farthest-corner at 0% 50%, var(--elements-webflow-library--general--shadow-01), white 15%);
+  color: var(--elements-webflow-library--neutral--100);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.brix---half-bg-bottom-2 {
+  z-index: -1;
+  background-color: var(--elements-webflow-library--neutral--200);
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.brix---text-200-bold-2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.brix---color-accent-3 {
+  color: var(--elements-webflow-library--accent--primary-1);
+}
+
+.brix---text-201 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.brix---mg-bottom-8px-3 {
+  margin-bottom: 8px;
+}
+
+.brix---big-icon-left-2 {
+  border-radius: 16px;
+  margin-right: 16px;
+}
+
+.brix---card-link-icon-wrapper-2 {
+  border: 1px solid var(--elements-webflow-library--neutral--200);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 6px 0 var(--elements-webflow-library--general--shadow-01);
+  color: var(--elements-webflow-library--neutral--600);
+  transform-style: preserve-3d;
+  border-radius: 14px;
+  align-items: center;
+  padding: 14px 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  text-decoration: none;
+  transition: transform .3s, border-color .3s, color .3s;
+  display: flex;
+}
+
+.brix---card-link-icon-wrapper-2:hover {
+  border-color: var(--elements-webflow-library--accent--primary-1);
+  transform: scale3d(.96, .96, 1.01);
+}
+
+.brix---grid-2-columns-2 {
+  grid-column-gap: 28px;
+  grid-row-gap: 28px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  display: grid;
+}
+
+.brix---color-neutral-816 {
+  color: var(--elements-webflow-library--neutral--800);
+}
+
+.brix---inner-container-460px-center-2 {
+  max-width: 460px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brix---error-message-2 {
+  color: #ff5a65;
+  text-align: center;
+  background-color: #ffeff0;
+  border-radius: 16px;
+  margin-top: 20px;
+  padding: 20px 24px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.brix---color-neutral-817 {
+  color: var(--elements-webflow-library--neutral--100);
+}
+
+.brix---icon-success-message-big-2 {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.brix---success-message-2 {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+  border-radius: 24px;
+  padding: 28px 28px 32px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.brix---social-icon-square-30px-2 {
+  background-color: var(--elements-webflow-library--secondary--color-2);
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  min-height: 30px;
+  text-decoration: none;
+  transition: transform .3s, background-color .3s, color .3s;
+  display: flex;
+}
+
+.brix---social-icon-square-30px-2:hover {
+  transform: scale(.92);
+}
+
+.brix---social-media-grid-right---mbp-center-2 {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  flex: 1;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, 36px);
+  justify-content: end;
+  align-self: center;
+  justify-items: end;
+}
+
+.brix---btn-primary-2 {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  justify-content: center;
+  padding: 1.5rem 38px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+}
+
+.brix---btn-primary-2:hover {
+  background-color: var(--elements-webflow-library--accent--color-2);
+  color: var(--elements-webflow-library--neutral--100);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---text-area-2 {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 7px 0 var(--elements-webflow-library--general--shadow-02);
+  border-radius: 22px;
+  min-height: 144px;
+  padding: 16px 24px;
+  font-size: 18px;
+  line-height: 28px;
+  transition: box-shadow .3s, color .3s, border-color .3s;
+}
+
+.brix---text-area-2:hover {
+  border-color: var(--elements-webflow-library--accent--primary-1);
+  box-shadow: 0 2px 12px 0 var(--elements-webflow-library--general--shadow-03);
+}
+
+.brix---text-area-2:focus {
+  border-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--800);
+}
+
+.brix---text-area-2::placeholder {
+  color: var(--elements-webflow-library--neutral--600);
+  font-size: 18px;
+}
+
+.brix---input-label-2 {
+  color: var(--elements-webflow-library--neutral--800);
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.brix---input-2 {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 7px 0 var(--elements-webflow-library--general--shadow-02);
+  border-radius: 100px;
+  min-height: 70px;
+  margin-bottom: 0;
+  padding: 16px 24px;
+  font-size: 18px;
+  line-height: 20px;
+  transition: box-shadow .3s, color .3s, border-color .3s;
+}
+
+.brix---input-2:hover {
+  border-color: var(--elements-webflow-library--accent--primary-1);
+  box-shadow: 0 2px 12px 0 var(--elements-webflow-library--general--shadow-03);
+}
+
+.brix---input-2:focus {
+  border-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--800);
+}
+
+.brix---input-2::placeholder {
+  color: var(--elements-webflow-library--neutral--600);
+  font-size: 18px;
+}
+
+.brix---form-grid-2-columns-2 {
+  grid-column-gap: 28px;
+  grid-row-gap: 28px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  display: grid;
+}
+
+.brix---card-form-v2-2 {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 7px 0 var(--elements-webflow-library--general--shadow-01);
+  border-radius: 24px;
+  min-height: 620px;
+  margin-bottom: 0;
+  padding: 72px 78px;
+}
+
+.brix---mg-bottom-64px-2 {
+  margin-bottom: 64px;
+}
+
+.brix---inner-container-752px-center-2 {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact {
+  background-image: linear-gradient(0deg, var(--elements-webflow-library--general--shadow-01), white 30%);
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.brix---btn-primary-small-2 {
+  border-style: none solid solid;
+  border-width: 1px;
+  border-color: var(--primary-3);
+  background-color: var(--primary-3);
+  color: var(--elements-webflow-library--accent--primary-1);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  justify-content: center;
+  padding: 18px 24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+}
+
+.brix---btn-primary-small-2:hover {
+  color: var(--elements-webflow-library--neutral--100);
+  background-color: #1a685f;
+  transform: translate3d(0, -3px, .01px);
+}
+
+.html-embed-2 {
+  border-radius: 10px;
+  max-width: 752px;
+  margin: 5rem auto 0;
+  padding-top: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+.brix---hidden-desktop {
+  display: none;
+}
+
+.brix---btn-slider-arrow-right---testimonial-v12 {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 12px 0 var(--elements-webflow-library--general--shadow-02);
+  color: var(--elements-webflow-library--neutral--800);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  min-width: 64px;
+  height: 64px;
+  min-height: 64px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 26px;
+  text-decoration: none;
+  transition: transform .3s;
+  display: flex;
+  top: 50%;
+  bottom: 0;
+  right: -10px;
+  transform: translate(0, -50%);
+}
+
+.brix---btn-slider-arrow-right---testimonial-v12:hover {
+  transform: scale(.95)translate(0, -50%);
+}
+
+.brix---btn-slider-arrow-left---testimonial-v12 {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 12px 0 var(--elements-webflow-library--general--shadow-02);
+  color: var(--elements-webflow-library--neutral--800);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  min-width: 64px;
+  height: 64px;
+  min-height: 64px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 26px;
+  text-decoration: none;
+  transition: transform .3s;
+  display: flex;
+  top: 50%;
+  left: -11px;
+  transform: translate(0, -50%);
+}
+
+.brix---btn-slider-arrow-left---testimonial-v12:hover {
+  transform: scale(.95)translate(0, -50%);
+}
+
+.brix---heading-h4-size {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.brix---color-neutral-818 {
+  color: var(--elements-webflow-library--neutral--800);
+}
+
+.brix---flex-horizontal {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.brix---color-neutral-819 {
+  color: var(--elements-webflow-library--neutral--600);
+}
+
+.brix---mg-bottom-24px-3 {
+  margin-bottom: 24px;
+}
+
+.brix---card-testimonial-v13 {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 7px 0 var(--elements-webflow-library--general--shadow-01);
+  border-radius: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 48px 32px 56px;
+  display: flex;
+}
+
+.brix---slide-item-mg {
+  margin-right: 28px;
+}
+
+.brix---slider-mask-width-390px {
+  max-width: 390px;
+  height: 100%;
+  overflow: visible;
+}
+
+.brix---slider-wrapper {
+  background-color: rgba(0, 0, 0, 0);
+  height: 100%;
+}
+
+.brix---btn-secondary-2 {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  color: var(--elements-webflow-library--neutral--800);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  padding: 26px 38px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  transition: border-color .3s, transform .3s, background-color .3s, color .3s;
+  box-shadow: 0 4px 10px rgba(20, 20, 43, .04);
+}
+
+.brix---btn-secondary-2:hover {
+  border-color: var(--elements-webflow-library--accent--primary-1);
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---button-row-left-3 {
+  margin-right: 24px;
+}
+
+.brix---buttons-row-right---t-left {
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
+.brix---heading-h2-size-4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.brix---mg-bottom-16px-2 {
+  margin-bottom: 16px;
+}
+
+.brix---inner-container-490px {
+  max-width: 490px;
+}
+
+.brix---grid-top---text-2-buttons {
+  grid-column-gap: 60px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  align-items: end;
+  justify-items: stretch;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.brix---container-default-6 {
+  max-width: 1218px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.brix---section-overflow-hidden {
+  background-color: var(--primary-3);
+  background-image: radial-gradient(circle farthest-corner at 50% 50%, var(--elements-webflow-library--general--shadow-02), white 20%);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  overflow: hidden;
+}
+
+.brix---buttons-row-center-3 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.brix---color-neutral-820 {
+  color: var(--elements-webflow-library--neutral--600);
+}
+
+.brix---color-neutral-821 {
+  color: var(--elements-webflow-library--neutral--800);
+}
+
+.brix---text-center-4 {
+  text-align: center;
+}
+
+.brix---inner-container-600px---center-3 {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brix---container-default-7 {
+  max-width: 1218px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.brix---section-4 {
+  color: var(--elements-webflow-library--neutral--100);
+  padding-top: 176px;
+  padding-bottom: 176px;
+}
+
+.brix---opacity-10-2 {
+  opacity: .1;
+}
+
+.brix---floating-image-hero-v1---1 {
+  z-index: -1;
+  position: absolute;
+  top: auto;
+  bottom: -32%;
+  left: -41%;
+  right: auto;
+}
+
+.brix---opacity-20 {
+  opacity: .2;
+}
+
+.brix---floating-image-hero-v1---2 {
+  z-index: -1;
+  max-width: 600px;
+  position: absolute;
+  top: auto;
+  bottom: 8%;
+  left: auto;
+  right: 11%;
+  transform: rotate(140deg);
+}
+
+.brix---buttons-row-2 {
+  align-items: center;
+  display: flex;
+}
+
+.brix---color-neutral-822 {
+  color: var(--elements-webflow-library--neutral--600);
+}
+
+.brix---color-neutral-823 {
+  color: var(--elements-webflow-library--neutral--800);
+}
+
+.brix---grid-hero-v1 {
+  grid-column-gap: 80px;
+  grid-row-gap: 28px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  display: grid;
+}
+
+.brix---container-default-8 {
+  max-width: 1218px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.brix---section-hero-primary {
+  background-color: var(--primary-3);
+  background-image: radial-gradient(circle farthest-corner at 0% 50%, var(--elements-webflow-library--general--shadow-02), white 15%);
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.brix---btn-secondary-white-3 {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  color: var(--elements-webflow-library--neutral--100);
+  text-align: center;
+  transform-style: preserve-3d;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 48px;
+  padding: 26px 38px;
+  font-size: 18px;
+  line-height: 20px;
+  transition: border-color .3s, transform .3s, background-color .3s, color .3s;
+  box-shadow: 0 4px 10px rgba(20, 20, 43, .04);
+}
+
+.brix---btn-secondary-white-3:hover {
+  border-color: var(--elements-webflow-library--neutral--100);
+  background-color: var(--elements-webflow-library--neutral--100);
+  color: var(--elements-webflow-library--neutral--800);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---btn-primary-white-3 {
+  background-color: var(--elements-webflow-library--neutral--100);
+  color: var(--elements-webflow-library--accent--primary-1);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  justify-content: center;
+  padding: 26px 38px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+}
+
+.brix---btn-primary-white-3:hover {
+  background-color: var(--elements-webflow-library--secondary--color-2);
+  color: var(--elements-webflow-library--accent--primary-1);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---grid-cta-v1 {
+  grid-column-gap: 50px;
+  grid-row-gap: 28px;
+  grid-template-rows: auto;
+  grid-template-columns: .8fr .8fr;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  display: grid;
+}
+
+.brix---cta-v3-floating-item-02-2 {
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: auto;
+  right: 0%;
+}
+
+.brix---cta-v4-floating-item-01 {
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: auto;
+}
+
+.brix---cta-card-2 {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  border-radius: 30px;
+  padding: 110px 60px;
+  position: relative;
+}
+
+.brix---container-default-9 {
+  max-width: 1218px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.brix---section-small-2 {
+  background-color: var(--primary-3);
+  background-image: linear-gradient(0deg, var(--elements-webflow-library--general--shadow-02), white 30%);
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+.brix---btn-primary-small-3 {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  justify-content: center;
+  padding: 18px 24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+}
+
+.brix---btn-primary-small-3:hover {
+  background-color: var(--elements-webflow-library--secondary--color-1);
+  color: var(--elements-webflow-library--neutral--100);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---btn-header-hidden-on-mbl-3 {
+  margin-left: 24px;
+}
+
+.brix---hamburger-menu-bar-bottom-3, .brix---hamburger-menu-bar-top-3 {
+  background-color: var(--elements-webflow-library--neutral--800);
+  border-radius: 20px;
+  width: 52px;
+  height: 4px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.brix---hamburger-menu-wrapper-3 {
+  padding: 0;
+  transition: transform .3s;
+}
+
+.brix---hamburger-menu-wrapper-3:hover {
+  transform: scale(.96);
+}
+
+.brix---hamburger-menu-wrapper-3.w--open {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.brix---header-right-col-3 {
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
+.brix---header-nav-list-item-show-in-tablet-2 {
+  margin-bottom: 0;
+  padding-left: 32px;
+  display: none;
+}
+
+.brix---header-nav-link-3 {
+  color: var(--primary-3);
+  padding: 0;
+  font-size: 18px;
+  line-height: 20px;
+  transition: color .3s;
+}
+
+.brix---header-nav-link-3:hover {
+  color: var(--elements-webflow-library--accent--primary-1);
+}
+
+.brix---header-nav-list-item-left-2 {
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 32px;
+}
+
+.brix---dropdown-link-3 {
+  color: var(--elements-webflow-library--neutral--600);
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+  transition: color .3s;
+  display: flex;
+}
+
+.brix---dropdown-link-3:hover {
+  color: var(--elements-webflow-library--accent--primary-1);
+}
+
+.brix---dropdown-links-grid-3 {
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.brix---dropdown-pd-3 {
+  padding: 40px;
+}
+
+.brix---dropdown-card-3 {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 12px 0 var(--elements-webflow-library--general--shadow-02);
+  border-radius: 20px;
+  min-width: 280px;
+  top: 32px;
+  overflow: hidden;
+}
+
+.brix---dropdown-column-wrapper-3 {
+  background-color: rgba(0, 0, 0, 0);
+  padding-top: 32px;
+  transform: translate(0);
+}
+
+.brix---dropdown-column-wrapper-3.w--open {
+  transform: translate(-50%);
+}
+
+.brix---dropdown-chevron-3 {
+  color: var(--elements-webflow-library--neutral--800);
+  width: 14px;
+  margin-left: 6px;
+}
+
+.brix---dropdown-toggle-3 {
+  color: var(--elements-webflow-library--neutral--800);
+  align-items: center;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  transition: color .3s;
+  display: flex;
+}
+
+.brix---dropdown-toggle-3:hover {
+  color: var(--elements-webflow-library--accent--primary-1);
+}
+
+.brix---header-nav-menu-list-3 {
+  z-index: 1;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.brix---header-logo-2 {
+  max-width: 250px;
+}
+
+.brix---header-logo-link-left-2 {
+  transform-style: preserve-3d;
+  padding-left: 0;
+  padding-right: 40px;
+  transition: transform .3s, color .3s;
+}
+
+.brix---header-logo-link-left-2:hover {
+  transform: scale3d(.96, .96, 1.01);
+}
+
+.brix---header-left-col-2 {
+  color: var(--primary-2);
+  align-items: center;
+  display: flex;
+}
+
+.brix---header-content-wrapper-3 {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.brix---header-wrapper-rounded-2 {
+  background-color: var(--primary-2);
+  border-radius: 130px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 3px 10px rgba(33, 31, 84, .08);
+}
+
+.brix---container-default-center {
+  max-width: 1300px;
+  margin-top: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.brix---header-wrapper-rounded-3 {
+  background-color: var(--navbar-background);
+  pointer-events: auto;
+  color: var(--navbar);
+  border-radius: 130px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 3px 10px rgba(33, 31, 84, .08);
+}
+
+.brix---icon-success-message-left-2 {
+  margin-right: 10px;
+}
+
+.brix---flex-horizontal---vertical-mbp-2 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.brix---success-message-white {
+  border: 1px solid var(--elements-webflow-library--neutral--500);
+  background-color: var(--elements-webflow-library--neutral--100);
+  color: var(--elements-webflow-library--accent--primary-1);
+  border-radius: 24px;
+  padding: 28px;
+  font-size: 18px;
+  line-height: 30px;
+  box-shadow: 0 3px 8px rgba(33, 31, 84, .2);
+}
+
+.brix---btn-primary-small-input {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  justify-content: center;
+  padding: 8px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  right: 8px;
+}
+
+.brix---btn-primary-small-input:hover {
+  background-color: var(--elements-webflow-library--secondary--color-1);
+  color: var(--elements-webflow-library--neutral--100);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---input-large-button-inside {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 7px 0 var(--elements-webflow-library--general--shadow-02);
+  border-radius: 100px;
+  min-height: 76px;
+  margin-bottom: 0;
+  padding: 1rem 24px;
+  font-size: 18px;
+  line-height: 20px;
+  transition: box-shadow .3s, color .3s, border-color .3s;
+}
+
+.brix---input-large-button-inside:hover {
+  border-color: var(--elements-webflow-library--accent--primary-1);
+  box-shadow: 0 2px 12px 0 var(--elements-webflow-library--general--shadow-03);
+}
+
+.brix---input-large-button-inside:focus {
+  border-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--800);
+}
+
+.brix---input-large-button-inside::placeholder {
+  color: var(--elements-webflow-library--neutral--600);
+  font-size: 18px;
+}
+
+.brix---position-relative {
+  position: relative;
+}
+
+.brix---mg-bottom-4 {
+  margin-bottom: 0;
+}
+
+.brix---cta-v20-left {
+  align-items: center;
+  display: flex;
+}
+
+.brix---grid-cta-v20 {
+  grid-column-gap: 80px;
+  grid-row-gap: 28px;
+  grid-template-rows: auto;
+  grid-template-columns: .9fr .8fr;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  display: grid;
+}
+
+.brix---cta-section-small {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  border: 1px #000;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.brix---text-300 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.brix---text-300-bold {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.brix---color-neutral-824 {
+  color: var(--elements-webflow-library--neutral--800);
+}
+
+.brix---color-neutral-825 {
+  color: var(--elements-webflow-library--neutral--600);
+}
+
+.brix---content-inside-card-testimonial-video {
+  padding: 48px 76px;
+}
+
+.brix---play-button-100px {
+  box-shadow: 0 24px 65px 0 var(--elements-webflow-library--general--shadow-05);
+  transform-style: preserve-3d;
+  border-radius: 50%;
+  width: 100px;
+  transition: transform .3s;
+}
+
+.brix---play-button-100px:hover {
+  transform: scale3d(.94, .94, 1.01);
+}
+
+.brix---lightbox-video-icon-wrapper {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.brix---bg-overlay {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .5);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.brix---testimonial-video-image-wrapper {
+  height: 100%;
+  position: relative;
+}
+
+.brix---testimonial-video-wrapper {
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  flex: none;
+  overflow: hidden;
+}
+
+.brix---card-testimonial-video-left {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 7px 0 var(--elements-webflow-library--general--shadow-01);
+  border-radius: 24px;
+  align-items: center;
+  display: flex;
+}
+
+.brix---heading-h2-size-5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.brix---text-center-5 {
+  text-align: center;
+}
+
+.brix---inner-container-574px---center {
+  max-width: 574px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brix---section-5 {
+  color: var(--elements-webflow-library--neutral--100);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.brix---text-301 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.brix---color-neutral-826 {
+  color: var(--elements-webflow-library--neutral--800);
+}
+
+.brix---color-neutral-827 {
+  color: var(--elements-webflow-library--neutral--600);
+}
+
+.brix---card-content-testimonial-v3 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 0 0 88px;
+  display: flex;
+}
+
+.brix---image-fit-full-height {
+  object-fit: cover;
+  height: 100%;
+}
+
+.brix---testimonial-v3-image-wrapper {
+  object-fit: fill;
+  border-radius: 0;
+  flex: none;
+  width: 100%;
+  max-width: 548px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  overflow: hidden;
+}
+
+.brix---card-testimonial-v3 {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  border-radius: 24px;
+  padding: 3rem;
+  text-decoration: none;
+  transition: transform .3s, color .3s;
+  display: flex;
+}
+
+.brix---tab-card {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 12px 0 var(--elements-webflow-library--general--shadow-02);
+  opacity: .4;
+  border-radius: 10px;
+  margin-left: 12px;
+  margin-right: 12px;
+  padding: 32px 46px;
+  transition: opacity .3s, box-shadow .3s, color .3s;
+}
+
+.brix---tab-card:hover {
+  opacity: 1;
+}
+
+.brix---tab-card.w--current {
+  background-color: var(--elements-webflow-library--neutral--100);
+  opacity: 1;
+}
+
+.brix---tabs-menu-bottom-testimonial-v11 {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 0;
+  display: flex;
+}
+
+.brix---tabs-wrapper-reverse {
+  flex-direction: column-reverse;
+  display: flex;
+}
+
+.testimonials {
+  color: var(--elements-webflow-library--neutral--100);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.html-embed-1 {
+  border-radius: 0;
+  margin-top: 5rem;
+  padding-top: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+.brix---btn-secondary-white-4 {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  color: var(--elements-webflow-library--neutral--100);
+  text-align: center;
+  transform-style: preserve-3d;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 48px;
+  padding: 26px 38px;
+  font-size: 18px;
+  line-height: 20px;
+  transition: border-color .3s, transform .3s, background-color .3s, color .3s;
+  box-shadow: 0 4px 10px rgba(20, 20, 43, .04);
+}
+
+.brix---btn-secondary-white-4:hover {
+  border-color: var(--elements-webflow-library--neutral--100);
+  background-color: var(--elements-webflow-library--neutral--100);
+  color: var(--elements-webflow-library--neutral--800);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---btn-primary-white-4 {
+  background-color: var(--elements-webflow-library--neutral--100);
+  color: var(--elements-webflow-library--accent--primary-1);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  justify-content: center;
+  padding: 26px 38px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+}
+
+.brix---btn-primary-white-4:hover {
+  background-color: var(--elements-webflow-library--secondary--color-2);
+  color: var(--elements-webflow-library--accent--primary-1);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---button-row-left-4 {
+  margin-right: 24px;
+}
+
+.brix---buttons-row-right---t-left-2 {
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
+.brix---heading-h2-size-6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.brix---color-neutral-828 {
+  color: var(--elements-webflow-library--neutral--100);
+}
+
+.brix---grid-cta-v1-2 {
+  grid-column-gap: 50px;
+  grid-row-gap: 28px;
+  grid-template-rows: auto;
+  grid-template-columns: .8fr .8fr;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  display: grid;
+}
+
+.brix---cta-v3-floating-item-02-2-2 {
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: auto;
+  right: 0%;
+}
+
+.brix---cta-v4-floating-item-2 {
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: auto;
+}
+
+.brix---cta-card-3 {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  border-radius: 30px;
+  padding: 110px 60px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.brix---container-default-10 {
+  max-width: 1218px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.brix---section-small-3 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.text-span {
+  color: var(--elements-webflow-library--accent--primary-1);
+}
+
+.bold-text-5 {
+  font-weight: 400;
+}
+
+.bold-text-6 {
+  color: var(--elements-webflow-library--neutral--800);
+}
+
+.community {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.brix---paragraph-default-4-2 {
+  color: var(--elements-webflow-library--neutral--600);
+  max-width: 700px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.brix---text-200-bold-3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.brix---color-neutral-829 {
+  color: var(--elements-webflow-library--neutral--100);
+}
+
+.brix---icon-list-3 {
+  margin-right: 16px;
+}
+
+.brix---icon-list-item-wrapper-3 {
+  align-items: center;
+  display: flex;
+}
+
+.brix---error-message-3 {
+  color: #ff5a65;
+  text-align: center;
+  background-color: #ffeff0;
+  border-radius: 16px;
+  margin-top: 20px;
+  padding: 20px 24px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.brix---icon-success-message-left-3 {
+  margin-right: 10px;
+}
+
+.brix---flex-horizontal---vertical-mbp-3 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.brix---success-message-white-2 {
+  border: 1px solid var(--elements-webflow-library--neutral--500);
+  background-color: var(--elements-webflow-library--neutral--100);
+  color: var(--elements-webflow-library--accent--primary-1);
+  border-radius: 24px;
+  padding: 28px;
+  font-size: 18px;
+  line-height: 30px;
+  box-shadow: 0 3px 8px rgba(33, 31, 84, .2);
+}
+
+.brix---btn-primary-small-input-2 {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  justify-content: center;
+  padding: 8px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  right: 8px;
+}
+
+.brix---btn-primary-small-input-2:hover {
+  background-color: var(--elements-webflow-library--secondary--color-1);
+  color: var(--elements-webflow-library--neutral--100);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---input-large-button-inside-2 {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 7px 0 var(--elements-webflow-library--general--shadow-02);
+  border-radius: 100px;
+  min-height: 76px;
+  margin-bottom: 0;
+  padding: 16px 24px;
+  font-size: 18px;
+  line-height: 20px;
+  transition: box-shadow .3s, color .3s, border-color .3s;
+}
+
+.brix---input-large-button-inside-2:hover {
+  border-color: var(--elements-webflow-library--accent--primary-1);
+  box-shadow: 0 2px 12px 0 var(--elements-webflow-library--general--shadow-03);
+}
+
+.brix---input-large-button-inside-2:focus {
+  border-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--800);
+}
+
+.brix---input-large-button-inside-2::placeholder {
+  color: var(--elements-webflow-library--neutral--600);
+  font-size: 18px;
+}
+
+.brix---position-relative-2 {
+  position: relative;
+}
+
+.brix---mg-bottom-32px-4 {
+  margin-bottom: 32px;
+}
+
+.brix---heading-h2-size-7 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.brix---grid-cta-v3 {
+  grid-column-gap: 160px;
+  grid-row-gap: 28px;
+  grid-template-rows: auto;
+  grid-template-columns: .9fr 1fr;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  display: grid;
+}
+
+.brix---cta-v3-floating-item-02-2-3 {
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: auto;
+  right: 0%;
+}
+
+.brix---cta-v4-floating-item-3 {
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: auto;
+}
+
+.brix---cta-v16-card {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  border-radius: 30px;
+  padding: 110px 60px;
+  position: relative;
+}
+
+.brix---container-default-11 {
+  max-width: 1218px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.brix---section-small-5 {
+  background-image: linear-gradient(0deg, var(--elements-webflow-library--general--shadow-02), white);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+.brix---text-302 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.brix---color-accent-4 {
+  color: var(--elements-webflow-library--accent--primary-1);
+}
+
+.brix---text-200-bold-4 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.brix---color-neutral-830 {
+  color: var(--elements-webflow-library--neutral--800);
+}
+
+.brix---mg-bottom-8px-4 {
+  margin-bottom: 8px;
+}
+
+.brix---flex-horizontal-2 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.brix---paragraph-default-5 {
+  margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.brix---color-neutral-831 {
+  color: var(--elements-webflow-library--neutral--600);
+}
+
+.brix---mg-bottom-32px-5 {
+  margin-bottom: 32px;
+}
+
+.brix---heading-h4-size-2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.brix---mg-bottom-12px {
+  margin-bottom: 12px;
+}
+
+.brix---avatar-circle-04 {
+  border-radius: 50%;
+  width: 80px;
+  max-width: 80px;
+  height: 80px;
+  max-height: 80px;
+  overflow: hidden;
+  transform: translate(0);
+}
+
+.brix---card-testimonial-v2 {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 7px 0 var(--elements-webflow-library--general--shadow-01);
+  border-radius: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 40px 64px;
+  display: flex;
+}
+
+.brix---3-columns-1-col-tablet-3 {
+  grid-column-gap: 28px;
+  grid-row-gap: 28px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.brix---heading-h2-size-8 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.brix---mg-bottom-16px-3 {
+  margin-bottom: 16px;
+}
+
+.brix---text-center-6 {
+  text-align: center;
+}
+
+.brix---inner-container-574px---center-2 {
+  max-width: 574px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brix---mg-bottom-48px-3 {
+  margin-bottom: 48px;
+}
+
+.brix---container-default-12 {
+  max-width: 1218px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.brix---section-7 {
+  color: var(--elements-webflow-library--neutral--100);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.html-embed-1-12, .html-embed-1-12-23, .html-embed-1-12-23-34 {
+  border-radius: 0;
+  margin-top: 0;
+  padding-top: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+.brix---card-testimonial-v3-2, .brix---card-testimonial-v3-3 {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  border-radius: 24px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 3rem;
+  text-decoration: none;
+  transition: transform .3s, color .3s;
+  display: flex;
+}
+
+.brix---card-testimonial-v3-4 {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  border-radius: 24px;
+  margin-top: 3rem;
+  padding: 3rem;
+  text-decoration: none;
+  transition: transform .3s, color .3s;
+  display: flex;
+}
+
+.brix---btn-primary-full-width-2-copy {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 26px 38px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+}
+
+.brix---btn-primary-full-width-2-copy:hover {
+  background-color: var(--elements-webflow-library--accent--color-2);
+  color: var(--elements-webflow-library--neutral--100);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---btn-primary-full-width-2-3 {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 26px 38px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+}
+
+.brix---btn-primary-full-width-2-3:hover {
+  background-color: var(--elements-webflow-library--accent--color-2);
+  color: var(--elements-webflow-library--neutral--100);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---btn-primary-white-full-width-2-4 {
+  background-color: var(--elements-webflow-library--neutral--100);
+  color: var(--elements-webflow-library--accent--primary-1);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 26px 38px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+}
+
+.brix---btn-primary-white-full-width-2-4:hover {
+  background-color: var(--elements-webflow-library--secondary--color-2);
+  color: var(--elements-webflow-library--accent--primary-1);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---btn-primary-full-width-2-5 {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 26px 38px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+}
+
+.brix---btn-primary-full-width-2-5:hover {
+  background-color: var(--elements-webflow-library--accent--color-2);
+  color: var(--elements-webflow-library--neutral--100);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---btn-secondary-3 {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  color: var(--elements-webflow-library--neutral--800);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  padding: 26px 38px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  transition: border-color .3s, transform .3s, background-color .3s, color .3s;
+  box-shadow: 0 4px 10px rgba(20, 20, 43, .04);
+}
+
+.brix---btn-secondary-3:hover {
+  border-color: var(--elements-webflow-library--accent--primary-1);
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---btn-primary-3 {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  justify-content: center;
+  padding: 26px 38px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+}
+
+.brix---btn-primary-3:hover {
+  background-color: var(--elements-webflow-library--secondary--color-1);
+  color: var(--elements-webflow-library--neutral--100);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---button-row-left-5 {
+  margin-right: 24px;
+}
+
+.brix---buttons-row-center-4 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.brix---play-button-large {
+  box-shadow: 0 24px 65px 0 var(--elements-webflow-library--general--shadow-05);
+  transform-style: preserve-3d;
+  border-radius: 50%;
+  transition: transform .3s;
+}
+
+.brix---play-button-large:hover {
+  transform: scale3d(.94, .94, 1.01);
+}
+
+.brix---lightbox-video-icon-wrapper-2 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.brix---bg-overlay-2 {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 19px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.brix---position-relative-3 {
+  position: relative;
+}
+
+.brix---image-wrapper-br-24px-shadow-3 {
+  border: 5px solid var(--elements-webflow-library--accent--primary-1);
+  box-shadow: 0 0 10px 0 var(--elements-webflow-library--general--shadow-02);
+  border-radius: 24px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.brix---mg-bottom-56px-2 {
+  margin-bottom: 56px;
+}
+
+.brix---heading-h2-size-9 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.brix---color-neutral-832 {
+  color: var(--elements-webflow-library--neutral--800);
+}
+
+.brix---subtitle-4 {
+  color: var(--elements-webflow-library--accent--primary-1);
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.brix---mg-bottom-16px-4 {
+  margin-bottom: 16px;
+}
+
+.brix---text-center-7 {
+  text-align: center;
+}
+
+.brix---inner-container-640px---center {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brix---inner-container-1068px-center {
+  max-width: 1068px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brix---container-default-13 {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  max-width: 1218px;
+  padding: 0 24px;
+  display: flex;
+}
+
+.brix---section-8 {
+  background-color: var(--white);
+  color: var(--elements-webflow-library--neutral--100);
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+.brix---text-200-bold-5 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.brix---color-neutral-833 {
+  color: var(--elements-webflow-library--neutral--100);
+}
+
+.brix---icon-list-4 {
+  margin-right: 16px;
+}
+
+.brix---icon-list-item-wrapper-4 {
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+}
+
+.brix---error-message-4 {
+  color: #ff5a65;
+  text-align: center;
+  background-color: #ffeff0;
+  border-radius: 16px;
+  margin-top: 20px;
+  padding: 20px 24px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.brix---icon-success-message-left-4 {
+  margin-right: 10px;
+}
+
+.brix---flex-horizontal---vertical-mbp-4 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.brix---success-message-white-3 {
+  border: 1px solid var(--elements-webflow-library--neutral--500);
+  background-color: var(--elements-webflow-library--neutral--100);
+  color: var(--elements-webflow-library--accent--primary-1);
+  border-radius: 24px;
+  padding: 28px;
+  font-size: 18px;
+  line-height: 30px;
+  box-shadow: 0 3px 8px rgba(33, 31, 84, .2);
+}
+
+.brix---btn-primary-small-input-3 {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  justify-content: center;
+  padding: 8px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  right: 8px;
+}
+
+.brix---btn-primary-small-input-3:hover {
+  background-color: var(--elements-webflow-library--accent--color-2);
+  color: var(--elements-webflow-library--neutral--100);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---input-large-button-inside-3 {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 7px 0 var(--elements-webflow-library--general--shadow-02);
+  border-radius: 100px;
+  min-height: 76px;
+  margin-bottom: 0;
+  padding: 16px 24px;
+  font-size: 18px;
+  line-height: 20px;
+  transition: box-shadow .3s, color .3s, border-color .3s;
+}
+
+.brix---input-large-button-inside-3:hover {
+  border-color: var(--elements-webflow-library--accent--primary-1);
+  box-shadow: 0 2px 12px 0 var(--elements-webflow-library--general--shadow-03);
+}
+
+.brix---input-large-button-inside-3:focus {
+  border-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--800);
+}
+
+.brix---input-large-button-inside-3::placeholder {
+  color: var(--elements-webflow-library--neutral--600);
+  font-size: 18px;
+}
+
+.brix---mg-bottom-32px-6 {
+  margin-bottom: 32px;
+}
+
+.brix---grid-cta-v3-2 {
+  grid-column-gap: 116px;
+  grid-row-gap: 28px;
+  text-align: center;
+  grid-template-rows: auto;
+  grid-template-columns: .9fr;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  display: block;
+}
+
+.brix---cta-v3-floating-item-02-2-4 {
+  border-top-right-radius: 30px;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: auto;
+  right: 0%;
+}
+
+.brix---cta-v4-floating-item-4 {
+  border-bottom-left-radius: 30px;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: auto;
+}
+
+.brix---cta-v16-card-2 {
+  background-color: var(--elements-webflow-library--accent--color-2);
+  box-shadow: 0 0 20px -5px var(--black);
+  border-radius: 30px;
+  padding: 110px 60px;
+  position: relative;
+}
+
+.popup {
+  z-index: 99;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  background-color: var(--elements-webflow-library--general--shadow-05);
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.text-block {
+  color: var(--primary-3);
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.text-span-2, .text-span-3 {
+  font-weight: 700;
+}
+
+.bold-text-7 {
+  color: var(--white);
+}
+
+.bold-text-8 {
+  color: var(--primary-2);
+}
+
+.brix---btn-primary-full-width-2-5-6 {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  max-width: 250px;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem 38px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+  display: flex;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+
+.brix---btn-primary-full-width-2-5-6:hover {
+  background-color: var(--elements-webflow-library--accent--color-2);
+  color: var(--elements-webflow-library--neutral--100);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.community-2 {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+.code-embed {
+  margin-bottom: 0;
+}
+
+.div-block-2 {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.text-block-2 {
+  display: flex;
+}
+
+.brix---link-wrapper-white-copy {
+  color: var(--elements-webflow-library--neutral--100);
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  transition: none;
+  display: flex;
+}
+
+.brix---link-wrapper-white-copy:hover {
+  color: var(--elements-webflow-library--neutral--100);
+}
+
+.brix---text-200-bold-6 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.brix---color-neutral-834 {
+  color: var(--elements-webflow-library--neutral--100);
+}
+
+.brix---icon-list-5 {
+  margin-right: 16px;
+}
+
+.brix---icon-list-item-wrapper-5 {
+  align-items: center;
+  display: flex;
+}
+
+.brix---error-message-5 {
+  color: #ff5a65;
+  text-align: center;
+  background-color: #ffeff0;
+  border-radius: 16px;
+  margin-top: 20px;
+  padding: 20px 24px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.brix---icon-success-message-left-5 {
+  margin-right: 10px;
+}
+
+.brix---flex-horizontal---vertical-mbp-5 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.brix---success-message-white-4 {
+  border: 1px solid var(--elements-webflow-library--neutral--500);
+  background-color: var(--elements-webflow-library--neutral--100);
+  color: var(--elements-webflow-library--accent--primary-1);
+  border-radius: 24px;
+  padding: 28px;
+  font-size: 18px;
+  line-height: 30px;
+  box-shadow: 0 3px 8px rgba(33, 31, 84, .2);
+}
+
+.brix---btn-primary-small-input-4 {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  justify-content: center;
+  padding: 8px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  right: 8px;
+}
+
+.brix---btn-primary-small-input-4:hover {
+  background-color: var(--elements-webflow-library--secondary--color-1);
+  color: var(--elements-webflow-library--neutral--100);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---input-large-button-inside-4 {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 7px 0 var(--elements-webflow-library--general--shadow-02);
+  border-radius: 100px;
+  min-height: 76px;
+  margin-bottom: 0;
+  padding: 16px 24px;
+  font-size: 18px;
+  line-height: 20px;
+  transition: box-shadow .3s, color .3s, border-color .3s;
+}
+
+.brix---input-large-button-inside-4:hover {
+  border-color: var(--elements-webflow-library--accent--primary-1);
+  box-shadow: 0 2px 12px 0 var(--elements-webflow-library--general--shadow-03);
+}
+
+.brix---input-large-button-inside-4:focus {
+  border-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--800);
+}
+
+.brix---input-large-button-inside-4::placeholder {
+  color: var(--elements-webflow-library--neutral--600);
+  font-size: 18px;
+}
+
+.brix---position-relative-4 {
+  position: relative;
+}
+
+.brix---mg-bottom-32px-7 {
+  margin-bottom: 32px;
+}
+
+.brix---heading-h2-size-10 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.brix---grid-cta-v3-3 {
+  grid-column-gap: 169px;
+  grid-row-gap: 28px;
+  grid-template-rows: auto;
+  grid-template-columns: 1.25fr .75fr;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  display: grid;
+}
+
+.brix---cta-v3-floating-item-02-2-5 {
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: auto;
+  right: 0%;
+}
+
+.brix---cta-v4-floating-item-5 {
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: auto;
+}
+
+.brix---cta-v16-card-3 {
+  background-color: var(--elements-webflow-library--accent--color);
+  border-radius: 30px;
+  padding: 5rem 60px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.newsletter {
+  max-width: 1218px;
+  padding: 5rem 24px;
+}
+
+.brix---section-small-6 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.text-block-3 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.italic-text-3 {
+  font-size: 30px;
+}
+
+.image {
+  border-radius: 19px;
+}
+
+.header-2 {
+  background-color: var(--white);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.brix---link-icon-right-2 {
+  margin-left: 6px;
+}
+
+.brix---btn-large-icon-transparent {
+  border: 1px solid var(--elements-webflow-library--neutral--100);
+  color: var(--elements-webflow-library--neutral--100);
+  transform-style: preserve-3d;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 14px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 46px 34px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-decoration: none;
+  transition: transform .3s, color .3s;
+  display: flex;
+}
+
+.brix---btn-large-icon-transparent:hover {
+  color: var(--elements-webflow-library--neutral--100);
+  transform: scale3d(.96, .96, 1.01);
+}
+
+.brix---btn-large-icon {
+  background-color: var(--elements-webflow-library--neutral--100);
+  color: var(--elements-webflow-library--neutral--800);
+  transform-style: preserve-3d;
+  border-radius: 14px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 46px 34px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  text-decoration: none;
+  transition: transform .3s, color .3s;
+  display: flex;
+}
+
+.brix---btn-large-icon:hover {
+  transform: scale3d(.96, .96, 1.01);
+}
+
+.brix---button-large-row-left {
+  margin-right: 24px;
+}
+
+.brix---buttons-large-row {
+  align-items: center;
+  display: flex;
+}
+
+.brix---heading-h2-size-11 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.brix---color-neutral-835 {
+  color: var(--elements-webflow-library--neutral--100);
+}
+
+.brix---grid-cta-v16 {
+  grid-column-gap: 28px;
+  grid-row-gap: 28px;
+  grid-template-rows: auto;
+  grid-template-columns: .8fr .8fr;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  display: grid;
+}
+
+.brix---cta-v3-floating-item-02-2-6 {
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: auto;
+  right: 0%;
+}
+
+.brix---cta-v4-floating-item-6 {
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: auto;
+}
+
+.brix---cta-card-4 {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  border-radius: 30px;
+  padding: 110px 60px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.brix---container-default-15 {
+  max-width: 1218px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.popuop---invest-e-capital {
+  z-index: 99;
+  background-color: var(--elements-webflow-library--general--shadow-05);
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: none;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.brix---paragraph-default-tittle-1-2-3 {
+  color: var(--elements-webflow-library--neutral--800);
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 40px;
+  line-height: 30px;
+}
+
+@media screen and (min-width: 1440px) {
+  .brix---cta-v9-card {
+    padding-left: 94px;
+    padding-right: 94px;
+  }
+
+  .brix---z-index-1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .brix---form-grid-2-columns, .brix---form-grid-2-columns-2 {
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+  }
+
+  .brix---grid-hero-v1 {
+    grid-column-gap: 90px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .brix---hamburger-menu-bar-bottom {
+    width: 44px;
+    height: 3px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .brix---hamburger-menu-bar-top {
+    width: 44px;
+    height: 3px;
+  }
+
+  .brix---hamburger-menu-wrapper {
+    order: -1;
+    transition: transform .3s;
+  }
+
+  .brix---hamburger-menu-wrapper:hover {
+    transform: scale(.96);
+  }
+
+  .brix---hamburger-menu-wrapper.w--open {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .brix---header-nav-list-item-hamburger-desktop {
+    padding-left: 0;
+  }
+
+  .brix---dropdown-card-desktop {
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    border-radius: 0;
+    min-width: auto;
+    padding-top: 26px;
+  }
+
+  .brix---dropdown-card-desktop.w--open {
+    position: static;
+  }
+
+  .brix---dropdown-column-wrapper-hamburger {
+    padding-top: 0;
+    position: static;
+  }
+
+  .brix---header-nav-menu-hamburger-desktop {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .brix---header-hamburger-desktop-wrapper {
+    border-top: 1px solid var(--elements-webflow-library--neutral--300);
+    border-bottom: 1px solid var(--elements-webflow-library--neutral--300);
+    background-color: var(--elements-webflow-library--neutral--100);
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .metaexpert--header-logo {
+    max-width: 232px;
+  }
+
+  .brix---header-wrapper {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .brix---header-nav-list-item-show-in-tablet {
+    margin-bottom: 16px;
+    padding-left: 0;
+    display: block;
+  }
+
+  .brix---header-nav-list-item-left {
+    margin-bottom: 16px;
+    padding-left: 0;
+  }
+
+  .brix---dropdown-pd {
+    padding: 20px 0 14px;
+  }
+
+  .brix---dropdown-card {
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    border-radius: 0;
+    min-width: auto;
+  }
+
+  .brix---dropdown-card.w--open {
+    position: static;
+  }
+
+  .brix---dropdown-column-wrapper {
+    padding-top: 0;
+    position: static;
+  }
+
+  .brix---dropdown-column-wrapper.w--open {
+    transform: none;
+  }
+
+  .brix---header-nav-menu-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .brix---header-menu-wrapper-v2 {
+    border: 1px solid var(--elements-webflow-library--neutral--300);
+    background-color: var(--elements-webflow-library--neutral--100);
+    border-radius: 28px;
+    margin-top: 19px;
+    padding: 24px;
+  }
+
+  .brix---floating-image-hero-v6---1 {
+    top: 24%;
+    right: -30%;
+  }
+
+  .brix---grid-3-icon-list {
+    grid-row-gap: 16px;
+    grid-template-columns: auto;
+  }
+
+  .brix---btn-primary {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .brix---mg-bottom-56px {
+    margin-bottom: 48px;
+  }
+
+  .brix---heading-h1-size {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .header {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .brix---heading-h3-size {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .brix---display-2 {
+    font-size: 58px;
+    line-height: 70px;
+  }
+
+  .brix---grid-4-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .brix---heading-h2-size {
+    font-size: 30px;
+    line-height: 46px;
+  }
+
+  .brix---section {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  .brix---mg-bottom-32px {
+    margin-bottom: 24px;
+  }
+
+  .brix---grid-2-columns-text {
+    grid-row-gap: 60px;
+    grid-template-columns: 1fr;
+  }
+
+  .brix---btn-primary-full-width {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .brix---divider-40px {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+
+  .brix---btn-primary-white-full-width {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .brix---3-columns-1-col-tablet {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---mg-bottom-48px {
+    margin-bottom: 40px;
+  }
+
+  .brix---cta-v9-card {
+    padding: 72px 92px;
+  }
+
+  .brix---grid-cta-v9 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---cta-v9-section {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .brix---cta-v6-floating-item-02-2 {
+    width: 35%;
+    bottom: 9%;
+    right: -4%;
+  }
+
+  .brix---cta-v7-floating-item-01 {
+    width: 25%;
+    display: none;
+  }
+
+  .brix---mg-top-64px {
+    margin-top: 48px;
+  }
+
+  .brix---btn-primary-white {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .brix---cta-v7-section {
+    padding-top: 112px;
+  }
+
+  .brix---cta-v2-floating-item-02 {
+    width: 32%;
+    bottom: -9%;
+    right: -8%;
+  }
+
+  .brix---cta-v2-floating-item-01 {
+    width: 40%;
+    top: 0%;
+    left: -7%;
+  }
+
+  .brix---cta-section {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .brix---social-media-grid-right---mbp-center {
+    grid-column-gap: 10px;
+  }
+
+  .brix---card-form-v2 {
+    padding: 54px 40px;
+  }
+
+  .brix---section-position-relative {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  .brix---text-right---t-center, .brix---text-left---t-center {
+    text-align: center;
+  }
+
+  .brix---grid-footer-v11 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---footer-small {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .brix---social-media-grid-right---t-center {
+    grid-column-gap: 10px;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .brix---grid-footer-v12 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---footer-bottom-v12 {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .brix---cta-v1-floating-item-02 {
+    width: 38%;
+    bottom: -3%;
+  }
+
+  .brix---cta-v1-floating-item-01 {
+    width: 35%;
+    top: -4%;
+    left: -5%;
+  }
+
+  .brix---btn-primary-white-2 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .brix---heading-h2-size-2 {
+    font-size: 30px;
+    line-height: 46px;
+  }
+
+  .brix---cta-card {
+    padding: 72px 54px;
+  }
+
+  .brix---section-small {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .brix---cta-v1-floating-item-3 {
+    width: 38%;
+    bottom: -3%;
+  }
+
+  .brix---hamburger-menu-bar-bottom-2 {
+    width: 44px;
+    height: 3px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .brix---hamburger-menu-bar-top-2 {
+    width: 44px;
+    height: 3px;
+  }
+
+  .brix---hamburger-menu-wrapper-2 {
+    order: -1;
+    transition: transform .3s;
+  }
+
+  .brix---hamburger-menu-wrapper-2:hover {
+    transform: scale(.96);
+  }
+
+  .brix---hamburger-menu-wrapper-2.w--open {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .brix---header-nav-list-item-show-in-mbl, .brix---header-nav-list-item {
+    margin-bottom: 16px;
+    padding-left: 0;
+  }
+
+  .brix---dropdown-pd-2 {
+    padding: 20px 0 14px;
+  }
+
+  .brix---dropdown-card-2 {
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    border-radius: 0;
+    min-width: auto;
+  }
+
+  .brix---dropdown-card-2.w--open {
+    position: static;
+  }
+
+  .brix---dropdown-column-wrapper-2 {
+    padding-top: 0;
+    position: static;
+  }
+
+  .brix---dropdown-column-wrapper-2.w--open {
+    transform: none;
+  }
+
+  .brix---header-nav-menu-list-2 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .brix---header-menu-wrapper {
+    border-top: 1px solid var(--elements-webflow-library--neutral--300);
+    border-bottom: 1px solid var(--elements-webflow-library--neutral--300);
+    background-color: var(--elements-webflow-library--neutral--100);
+    padding: 24px;
+  }
+
+  .brix---header-logo {
+    max-width: 232px;
+  }
+
+  .brix---header-wrapper-2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .brix---text-left---t-center-2 {
+    text-align: center;
+  }
+
+  .brix---top-bar-right-col {
+    margin-bottom: .5rem;
+    margin-right: 0;
+  }
+
+  .brix---top-bar-flex-h-sb {
+    flex-direction: column;
+  }
+
+  .brix---top-bar-padding {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .navbar-2-3 {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+
+  .bold-text-3 {
+    line-height: 70px;
+  }
+
+  .brix---heading-h1-size-2 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .brix---mg-bottom-32px-2 {
+    margin-bottom: 24px;
+  }
+
+  .brix---heading-h2-size-3 {
+    font-size: 30px;
+    line-height: 46px;
+  }
+
+  .brix---grid-2-columns-text-2 {
+    grid-row-gap: 60px;
+    grid-template-columns: 1fr;
+  }
+
+  .about-us {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .brix---heading-h2-size-2-3 {
+    font-size: 30px;
+    line-height: 46px;
+  }
+
+  .brix---footer-bottom-v4 {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .brix---btn-primary-full-width-2 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .brix---divider-40px-2 {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+
+  .brix---heading-h1-size-3 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .brix---heading-h3-size-2 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .brix---mg-bottom-32px-3 {
+    margin-bottom: 24px;
+  }
+
+  .brix---btn-primary-white-full-width-2 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .brix---3-columns-1-col-tablet-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---mg-bottom-48px-2 {
+    margin-bottom: 40px;
+  }
+
+  .pricing {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .brix---social-media-grid-right---mbp-center-2 {
+    grid-column-gap: 10px;
+  }
+
+  .brix---btn-primary-2 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .brix---card-form-v2-2 {
+    padding: 54px 40px;
+  }
+
+  .contact {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .brix---heading-h4-size {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .brix---slider-mask-width-390px {
+    position: static;
+  }
+
+  .brix---buttons-row-right---t-left {
+    justify-content: flex-start;
+  }
+
+  .brix---heading-h2-size-4 {
+    font-size: 30px;
+    line-height: 46px;
+  }
+
+  .brix---grid-top---text-2-buttons {
+    grid-row-gap: 24px;
+    grid-template-columns: .7fr;
+  }
+
+  .brix---section-overflow-hidden, .brix---section-4 {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  .brix---floating-image-hero-v1---1 {
+    bottom: -14%;
+    left: -42%;
+  }
+
+  .brix---floating-image-hero-v1---2 {
+    top: 24%;
+    right: -30%;
+  }
+
+  .brix---grid-hero-v1 {
+    grid-row-gap: 48px;
+    grid-template-columns: 1fr;
+  }
+
+  .brix---section-hero-primary {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .brix---btn-primary-white-3 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .brix---grid-cta-v1 {
+    grid-template-columns: .7fr;
+  }
+
+  .brix---cta-v3-floating-item-02-2 {
+    display: none;
+  }
+
+  .brix---cta-card-2 {
+    padding: 72px 54px;
+  }
+
+  .brix---section-small-2 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .brix---hamburger-menu-bar-bottom-3 {
+    width: 44px;
+    height: 3px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .brix---hamburger-menu-bar-top-3 {
+    width: 44px;
+    height: 3px;
+  }
+
+  .brix---hamburger-menu-wrapper-3 {
+    order: -1;
+    transition: transform .3s;
+  }
+
+  .brix---hamburger-menu-wrapper-3:hover {
+    transform: scale(.96);
+  }
+
+  .brix---hamburger-menu-wrapper-3.w--open {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .brix---header-nav-list-item-show-in-tablet-2 {
+    margin-bottom: 16px;
+    padding-left: 0;
+    display: block;
+  }
+
+  .brix---header-nav-list-item-left-2 {
+    margin-bottom: 16px;
+    padding-left: 0;
+  }
+
+  .brix---dropdown-pd-3 {
+    padding: 20px 0 14px;
+  }
+
+  .brix---dropdown-card-3 {
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    border-radius: 0;
+    min-width: auto;
+  }
+
+  .brix---dropdown-card-3.w--open {
+    position: static;
+  }
+
+  .brix---dropdown-column-wrapper-3 {
+    padding-top: 0;
+    position: static;
+  }
+
+  .brix---dropdown-column-wrapper-3.w--open {
+    transform: none;
+  }
+
+  .brix---header-nav-menu-list-3 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .brix---header-menu-wrapper-v2-2 {
+    border: 1px solid var(--elements-webflow-library--neutral--300);
+    background-color: var(--elements-webflow-library--neutral--100);
+    border-radius: 28px;
+    margin-top: 19px;
+    padding: 24px;
+  }
+
+  .brix---header-logo-2 {
+    max-width: 232px;
+  }
+
+  .brix---btn-primary-small-input {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .brix---grid-cta-v20 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---content-inside-card-testimonial-video {
+    padding-bottom: 72px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .brix---play-button-100px, .brix---lightbox-video-icon-wrapper {
+    max-width: 100px;
+  }
+
+  .brix---video-bg-image-testimonial {
+    width: 100%;
+  }
+
+  .brix---testimonial-video-wrapper {
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 0;
+    width: 100%;
+  }
+
+  .brix---card-testimonial-video-left {
+    flex-direction: column;
+  }
+
+  .brix---heading-h2-size-5 {
+    font-size: 30px;
+    line-height: 46px;
+  }
+
+  .brix---section-5 {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  .brix---card-content-testimonial-v3 {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .brix---testimonial-v3-image-wrapper {
+    max-width: 310px;
+  }
+
+  .brix---tab-card {
+    margin: 14px 8px 13px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .brix---tabs-menu-bottom-testimonial-v11 {
+    flex-flow: wrap;
+    align-items: center;
+  }
+
+  .testimonials {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .brix---btn-primary-white-4 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .brix---buttons-row-right---t-left-2 {
+    justify-content: flex-start;
+  }
+
+  .brix---heading-h2-size-6 {
+    font-size: 30px;
+    line-height: 46px;
+  }
+
+  .brix---grid-cta-v1-2 {
+    grid-template-columns: .7fr;
+  }
+
+  .brix---cta-v3-floating-item-02-2-2 {
+    display: none;
+  }
+
+  .brix---cta-card-3 {
+    padding: 72px 54px;
+  }
+
+  .brix---section-small-3 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .community {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .brix---btn-primary-small-input-2 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .brix---mg-bottom-32px-4 {
+    margin-bottom: 24px;
+  }
+
+  .brix---heading-h2-size-7 {
+    font-size: 30px;
+    line-height: 46px;
+  }
+
+  .brix---grid-cta-v3 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---cta-v3-floating-item-02-2-3 {
+    display: none;
+  }
+
+  .brix---cta-v16-card {
+    padding: 72px 54px;
+  }
+
+  .brix---section-small-5 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .brix---mg-bottom-32px-5 {
+    margin-bottom: 24px;
+  }
+
+  .brix---heading-h4-size-2 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .brix---3-columns-1-col-tablet-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---heading-h2-size-8 {
+    font-size: 30px;
+    line-height: 46px;
+  }
+
+  .brix---mg-bottom-48px-3 {
+    margin-bottom: 40px;
+  }
+
+  .brix---section-7 {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  .brix---btn-primary-full-width-2-copy, .brix---btn-primary-full-width-2-3, .brix---btn-primary-white-full-width-2-4, .brix---btn-primary-full-width-2-5, .brix---btn-primary-3 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .brix---lightbox-video-icon-wrapper-2 {
+    max-width: 100px;
+  }
+
+  .brix---mg-bottom-56px-2 {
+    margin-bottom: 48px;
+  }
+
+  .brix---heading-h2-size-9 {
+    font-size: 30px;
+    line-height: 46px;
+  }
+
+  .brix---section-8 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .brix---btn-primary-small-input-3 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .brix---mg-bottom-32px-6 {
+    margin-bottom: 24px;
+  }
+
+  .brix---grid-cta-v3-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---cta-v3-floating-item-02-2-4 {
+    display: none;
+  }
+
+  .brix---cta-v16-card-2 {
+    padding: 72px 54px;
+  }
+
+  .popup {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .brix---btn-primary-full-width-2-5-6 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .community-2 {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+  }
+
+  .brix---btn-primary-small-input-4 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .brix---mg-bottom-32px-7 {
+    margin-bottom: 24px;
+  }
+
+  .brix---heading-h2-size-10 {
+    font-size: 30px;
+    line-height: 46px;
+  }
+
+  .brix---grid-cta-v3-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---cta-v3-floating-item-02-2-5 {
+    display: none;
+  }
+
+  .brix---cta-v16-card-3 {
+    padding: 72px 54px;
+  }
+
+  .brix---section-small-6 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .header-2 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .brix---button-large-row-left {
+    margin-bottom: 24px;
+    margin-right: 0;
+  }
+
+  .brix---buttons-large-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .brix---heading-h2-size-11 {
+    font-size: 30px;
+    line-height: 46px;
+  }
+
+  .brix---grid-cta-v16 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---cta-v3-floating-item-02-2-6 {
+    display: none;
+  }
+
+  .brix---cta-card-4 {
+    padding: 72px 54px;
+  }
+
+  .popuop---invest-e-capital {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .brix---header-big-nav-link {
+    font-size: 32px;
+    line-height: 34px;
+  }
+
+  .brix---dropdown-chevron-big {
+    width: 25px;
+  }
+
+  .brix---dropdown-toggle-big-link {
+    font-size: 32px;
+    line-height: 34px;
+  }
+
+  .metaexpert--header-logo {
+    max-width: 90%;
+  }
+
+  .metaexpert---btn-primary-small {
+    padding: 20px 32px;
+  }
+
+  .brix---btn-header-hidden-on-mbl {
+    display: none;
+  }
+
+  .brix---header-nav-list-item-show-in-tablet {
+    display: block;
+  }
+
+  .brix---floating-image-hero-v6---1 {
+    max-width: 480px;
+  }
+
+  .brix---mg-top-80px {
+    margin-top: 64px;
+  }
+
+  .brix---text-200-list-bold {
+    font-size: 16px;
+  }
+
+  .brix---grid-3-icon-list {
+    grid-row-gap: 18px;
+    grid-template-columns: auto;
+  }
+
+  .brix---btn-primary {
+    padding: 20px 32px;
+  }
+
+  .brix---input {
+    min-height: 60px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .brix---mg-bottom-56px {
+    margin-bottom: 40px;
+  }
+
+  .brix---mg-bottom-40px {
+    margin-bottom: 24px;
+  }
+
+  .brix---heading-h1-size {
+    margin-bottom: 12px;
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  .header {
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .brix---display-2 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .brix---heading-h2-size {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .brix---section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .brix---heading-h5-size {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .brix---grid-2-columns-2-col-mbl {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .brix---subtitle {
+    font-size: 17px;
+    line-height: 19px;
+  }
+
+  .brix---image-wrapper-br-24px-shadow {
+    box-shadow: 0 4px 22px 0 var(--elements-webflow-library--general--shadow-04);
+    border-radius: 14px;
+  }
+
+  .brix---grid-2-columns-text {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---btn-primary-full-width {
+    padding: 20px 32px;
+  }
+
+  .brix---divider-40px {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+
+  .brix---text-300-medium {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .brix---pricing-content-v2 {
+    padding-bottom: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .brix---btn-primary-white-full-width {
+    padding: 20px 32px;
+  }
+
+  .brix---badge-secondary-small-bold {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .brix---3-columns-1-col-tablet {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---badge-secondary---tabs {
+    margin: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .brix---tabs-menu {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .brix---mg-bottom-48px {
+    margin-bottom: 32px;
+  }
+
+  .brix---btn-secondary {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .brix---button-row-left {
+    margin-right: 16px;
+  }
+
+  .brix---mg-bottom-16px {
+    margin-bottom: 8px;
+  }
+
+  .brix---cta-v9-card {
+    padding: 50px 32px;
+  }
+
+  .brix---grid-cta-v9 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---cta-v9-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .brix---mg-top-64px {
+    margin-top: 40px;
+  }
+
+  .brix---btn-secondary-white {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .brix---btn-primary-white {
+    padding: 20px 32px;
+  }
+
+  .brix---cta-v7-section {
+    padding-top: 96px;
+  }
+
+  .brix---cta-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .brix---text-200-bold, .brix---text-200 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .brix---big-icon-left {
+    border-radius: 12px;
+    max-width: 56px;
+  }
+
+  .brix---grid-2-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---social-media-grid-right---mbp-center {
+    justify-content: end;
+    align-self: stretch;
+    align-items: center;
+    justify-items: end;
+  }
+
+  .brix---text-area {
+    border-radius: 18px;
+  }
+
+  .brix---form-grid-2-columns {
+    grid-column-gap: 18px;
+    grid-row-gap: 18px;
+    grid-template-columns: 1fr;
+  }
+
+  .brix---card-form-v2 {
+    padding: 56px 32px;
+  }
+
+  .brix---mg-bottom-64px {
+    margin-bottom: 48px;
+  }
+
+  .brix---section-position-relative {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .brix---footer-small {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .brix---social-media-grid-right---t-center {
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .brix---footer-logo-wrapper {
+    width: 239px;
+  }
+
+  .brix---cta-v1-floating-item-02 {
+    width: 34%;
+    bottom: -5%;
+    right: -4%;
+  }
+
+  .brix---cta-v1-floating-item-01 {
+    width: 34%;
+  }
+
+  .brix---btn-secondary-white-2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .brix---btn-primary-white-2 {
+    padding: 20px 32px;
+  }
+
+  .brix---button-row-left-2 {
+    margin-right: 16px;
+  }
+
+  .brix---heading-h2-size-2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .brix---mg-bottom-40px-2 {
+    margin-bottom: 24px;
+  }
+
+  .brix---cta-card {
+    padding: 56px 40px;
+  }
+
+  .brix---section-small {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .brix---cta-v1-floating-item-3 {
+    width: 34%;
+    bottom: -5%;
+    right: -4%;
+  }
+
+  .brix---btn-primary-small {
+    padding: 20px 32px;
+  }
+
+  .brix---btn-header-hidden-on-mbl-2 {
+    display: none;
+  }
+
+  .brix---header-nav-list-item-show-in-mbl {
+    display: block;
+  }
+
+  .brix---header-logo {
+    max-width: 90%;
+  }
+
+  .brix---container-default-3 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .brix---link-icon-right {
+    width: 20px;
+    margin-left: 8px;
+  }
+
+  .brix---top-bar-right-col {
+    margin-bottom: 12px;
+  }
+
+  .brix---top-bar-flex-h-sb {
+    flex-direction: column;
+  }
+
+  .navbar-2-3 {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .bold-text-2 {
+    font-size: 30px;
+  }
+
+  .bold-text-3 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .bold-text-4 {
+    font-size: 45px;
+    line-height: 30px;
+  }
+
+  .brix---heading-h5-size-2 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .brix---heading-h1-size-2 {
+    margin-bottom: 12px;
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  .brix---grid-2-columns-2-col-mbl-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .brix---heading-h2-size-3 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .brix---subtitle-2 {
+    font-size: 17px;
+    line-height: 19px;
+  }
+
+  .brix---image-wrapper-br-24px-shadow-2 {
+    box-shadow: 0 4px 22px 0 var(--elements-webflow-library--general--shadow-04);
+    border-radius: 14px;
+  }
+
+  .brix---grid-2-columns-text-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .about-us {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .brix---mg-bottom-40px-2-light {
+    margin-bottom: 24px;
+  }
+
+  .brix---heading-h2-size-2-3 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .brix---mg-bottom-40px-2-3 {
+    margin-bottom: 24px;
+  }
+
+  .brix---subtitle-2-2 {
+    font-size: 17px;
+    line-height: 19px;
+  }
+
+  .brix---footer-logo-wrapper-2 {
+    width: 239px;
+  }
+
+  .brix---grid-footer-logo---paragraph {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .brix---footer-bottom-v4 {
+    text-align: center;
+  }
+
+  .brix---btn-primary-full-width-2 {
+    padding: 20px 32px;
+  }
+
+  .brix---text-200-list-bold-2 {
+    font-size: 16px;
+  }
+
+  .brix---mg-bottom-40px-3 {
+    margin-bottom: 24px;
+  }
+
+  .brix---divider-40px-2 {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+
+  .brix---text-300-medium-2 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .brix---heading-h1-size-3 {
+    margin-bottom: 12px;
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  .brix---pricing-content-v2-2 {
+    padding-bottom: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .brix---btn-primary-white-full-width-2 {
+    padding: 20px 32px;
+  }
+
+  .brix---badge-secondary-small-bold-2 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .brix---3-columns-1-col-tablet-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---badge-secondary---tabs-2 {
+    margin: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .brix---tabs-menu-2 {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .brix---subtitle-3 {
+    font-size: 17px;
+    line-height: 19px;
+  }
+
+  .brix---mg-bottom-48px-2 {
+    margin-bottom: 32px;
+  }
+
+  .pricing {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .brix---text-200-bold-2, .brix---text-201 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .brix---big-icon-left-2 {
+    border-radius: 12px;
+    max-width: 56px;
+  }
+
+  .brix---grid-2-columns-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---social-media-grid-right---mbp-center-2 {
+    justify-content: end;
+    align-self: stretch;
+    align-items: center;
+    justify-items: end;
+  }
+
+  .brix---btn-primary-2 {
+    padding: 20px 32px;
+  }
+
+  .brix---text-area-2 {
+    border-radius: 18px;
+  }
+
+  .brix---input-2 {
+    min-height: 60px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .brix---form-grid-2-columns-2 {
+    grid-column-gap: 18px;
+    grid-row-gap: 18px;
+    grid-template-columns: 1fr;
+  }
+
+  .brix---card-form-v2-2 {
+    padding: 56px 32px;
+  }
+
+  .brix---mg-bottom-64px-2 {
+    margin-bottom: 48px;
+  }
+
+  .contact {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .brix---btn-primary-small-2 {
+    padding: 20px 32px;
+  }
+
+  .brix---btn-slider-arrow-right---testimonial-v12 {
+    width: 56px;
+    min-width: 56px;
+    height: 56px;
+    min-height: 56px;
+    font-size: 22px;
+    line-height: 24px;
+    top: auto;
+    bottom: -104px;
+    left: auto;
+    right: 36%;
+  }
+
+  .brix---btn-slider-arrow-left---testimonial-v12 {
+    width: 56px;
+    min-width: 56px;
+    height: 56px;
+    min-height: 56px;
+    font-size: 22px;
+    line-height: 24px;
+    top: auto;
+    bottom: -104px;
+    left: 36%;
+    right: auto;
+  }
+
+  .brix---heading-h4-size {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .brix---btn-secondary-2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .brix---button-row-left-3 {
+    margin-right: 16px;
+  }
+
+  .brix---heading-h2-size-4 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .brix---mg-bottom-16px-2 {
+    margin-bottom: 8px;
+  }
+
+  .brix---grid-top---text-2-buttons {
+    grid-template-columns: .9fr;
+  }
+
+  .brix---section-overflow-hidden, .brix---section-4 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .brix---floating-image-hero-v1---1 {
+    max-width: 500px;
+  }
+
+  .brix---floating-image-hero-v1---2 {
+    max-width: 480px;
+  }
+
+  .brix---grid-hero-v1 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---section-hero-primary {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .brix---btn-secondary-white-3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .brix---btn-primary-white-3 {
+    padding: 20px 32px;
+  }
+
+  .brix---grid-cta-v1 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---cta-v3-floating-item-02-2 {
+    max-width: 50%;
+  }
+
+  .brix---cta-card-2 {
+    padding: 56px 40px;
+  }
+
+  .brix---section-small-2 {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .brix---btn-primary-small-3 {
+    padding: 20px 32px;
+  }
+
+  .brix---btn-header-hidden-on-mbl-3 {
+    display: none;
+  }
+
+  .brix---header-nav-list-item-show-in-tablet-2 {
+    display: block;
+  }
+
+  .brix---header-logo-2 {
+    max-width: 90%;
+  }
+
+  .brix---input-large-button-inside {
+    min-height: 68px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .brix---grid-cta-v20 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---text-300 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .brix---text-300-bold {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .brix---content-inside-card-testimonial-video {
+    padding: 32px 32px 48px;
+  }
+
+  .brix---lightbox-video-icon-wrapper {
+    max-width: 90px;
+  }
+
+  .brix---heading-h2-size-5 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .brix---section-5 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .brix---text-301 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .brix---card-content-testimonial-v3 {
+    padding: 32px 32px 40px;
+  }
+
+  .brix---testimonial-v3-image-wrapper {
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 0;
+    max-width: 100%;
+  }
+
+  .brix---card-testimonial-v3 {
+    flex-direction: column;
+  }
+
+  .brix---tab-card {
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    padding: 20px 26px;
+    display: flex;
+  }
+
+  .brix---tabs-menu-bottom-testimonial-v11 {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .testimonials {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .brix---btn-secondary-white-4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .brix---btn-primary-white-4 {
+    padding: 20px 32px;
+  }
+
+  .brix---button-row-left-4 {
+    margin-right: 16px;
+  }
+
+  .brix---heading-h2-size-6 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .brix---grid-cta-v1-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---cta-v3-floating-item-02-2-2 {
+    max-width: 50%;
+  }
+
+  .brix---cta-card-3 {
+    padding: 56px 40px;
+  }
+
+  .brix---section-small-3 {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .community {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .brix---text-200-bold-3 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .brix---input-large-button-inside-2 {
+    min-height: 68px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .brix---heading-h2-size-7 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .brix---grid-cta-v3 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---cta-v3-floating-item-02-2-3 {
+    max-width: 50%;
+  }
+
+  .brix---cta-v16-card {
+    padding: 56px 40px;
+  }
+
+  .brix---section-small-5 {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .brix---text-302, .brix---text-200-bold-4 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .brix---heading-h4-size-2 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .brix---avatar-circle-04 {
+    width: 64px;
+    max-width: 64px;
+    height: 64px;
+    max-height: 64px;
+  }
+
+  .brix---card-testimonial-v2 {
+    padding: 44px 32px;
+  }
+
+  .brix---3-columns-1-col-tablet-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---heading-h2-size-8 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .brix---mg-bottom-16px-3 {
+    margin-bottom: 8px;
+  }
+
+  .brix---mg-bottom-48px-3 {
+    margin-bottom: 32px;
+  }
+
+  .brix---section-7 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .brix---card-testimonial-v3-2, .brix---card-testimonial-v3-3, .brix---card-testimonial-v3-4 {
+    flex-direction: column;
+  }
+
+  .brix---btn-primary-full-width-2-copy, .brix---btn-primary-full-width-2-3, .brix---btn-primary-white-full-width-2-4, .brix---btn-primary-full-width-2-5 {
+    padding: 20px 32px;
+  }
+
+  .brix---btn-secondary-3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .brix---btn-primary-3 {
+    padding: 20px 32px;
+  }
+
+  .brix---button-row-left-5 {
+    margin-right: 16px;
+  }
+
+  .brix---lightbox-video-icon-wrapper-2 {
+    max-width: 90px;
+  }
+
+  .brix---image-wrapper-br-24px-shadow-3 {
+    box-shadow: 0 4px 22px 0 var(--elements-webflow-library--general--shadow-04);
+    border-radius: 14px;
+  }
+
+  .brix---mg-bottom-56px-2 {
+    margin-bottom: 40px;
+  }
+
+  .brix---heading-h2-size-9 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .brix---subtitle-4 {
+    font-size: 17px;
+    line-height: 19px;
+  }
+
+  .brix---mg-bottom-16px-4 {
+    margin-bottom: 8px;
+  }
+
+  .brix---section-8 {
+    padding-top: 2.5rem;
+    padding-bottom: .5rem;
+  }
+
+  .brix---text-200-bold-5 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .brix---input-large-button-inside-3 {
+    min-height: 68px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .brix---grid-cta-v3-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---cta-v3-floating-item-02-2-4 {
+    max-width: 50%;
+  }
+
+  .brix---cta-v16-card-2 {
+    padding: 56px 40px;
+  }
+
+  .popup {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .brix---btn-primary-full-width-2-5-6 {
+    padding: 20px 32px;
+  }
+
+  .community-2 {
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
+  }
+
+  .brix---text-200-bold-6 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .brix---input-large-button-inside-4 {
+    min-height: 68px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .brix---heading-h2-size-10 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .brix---grid-cta-v3-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---cta-v3-floating-item-02-2-5 {
+    max-width: 50%;
+  }
+
+  .brix---cta-v16-card-3 {
+    padding: 56px 40px;
+  }
+
+  .brix---section-small-6 {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .header-2 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .brix---link-icon-right-2 {
+    width: 20px;
+    margin-left: 8px;
+  }
+
+  .brix---btn-large-icon-transparent, .brix---btn-large-icon {
+    padding: 30px 24px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .brix---heading-h2-size-11 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .brix---grid-cta-v16 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---cta-v3-floating-item-02-2-6 {
+    max-width: 50%;
+  }
+
+  .brix---cta-card-4 {
+    padding: 56px 40px;
+  }
+
+  .popuop---invest-e-capital {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .brix---header-big-nav-link {
+    font-size: 26px;
+    line-height: 28px;
+  }
+
+  .brix---header-nav-list-item-hamburger-desktop {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 17px;
+  }
+
+  .brix---dropdown-link-big {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .brix---dropdown-chevron-big {
+    width: 21px;
+    margin-left: 8px;
+  }
+
+  .brix---dropdown-toggle-big-link {
+    font-size: 26px;
+    line-height: 28px;
+  }
+
+  .metaexpert--container-default-center {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .metaexpert--header-logo {
+    max-width: 84%;
+  }
+
+  .metaexpert--header-logo.metaexpert--logo-v14 {
+    max-width: 100%;
+  }
+
+  .brix---container-default {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .metaexpert---btn-primary-small {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .brix---header-nav-list-item-show-in-tablet, .brix---header-nav-list-item-left {
+    text-align: left;
+    width: 100%;
+  }
+
+  .brix---header-wrapper-rounded {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  .brix---floating-image-hero-v6---1 {
+    display: none;
+  }
+
+  .brix---mg-top-80px {
+    margin-top: 56px;
+  }
+
+  .brix---icon-list {
+    width: 24px;
+    margin-right: 8px;
+  }
+
+  .brix---grid-3-icon-list {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---icon-success-message-left {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .brix---flex-horizontal---vertical-mbp {
+    flex-direction: column;
+  }
+
+  .brix---btn-primary {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 17px;
+    line-height: 19px;
+  }
+
+  .brix---input {
+    min-height: 54px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .brix---input::placeholder {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .brix---grid-subscribe-form-button-left {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---mg-bottom-56px {
+    margin-bottom: 32px;
+  }
+
+  .brix---paragraph-default {
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .brix---heading-h1-size {
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .header {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .brix---heading-h3-size {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .brix---display-2 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+
+  .brix---grid-4-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---heading-h2-size {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .brix---mg-bottom-8px {
+    margin-bottom: 6px;
+  }
+
+  .brix---grid-2-columns-2-col-mbl {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---mg-bottom-24px {
+    margin-bottom: 16px;
+  }
+
+  .brix---subtitle {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .brix---image-wrapper-br-24px-shadow {
+    border-radius: 16px;
+  }
+
+  .brix---btn-primary-full-width {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .brix---divider-40px {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .brix---paragraph-default-2 {
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .brix---btn-primary-white-full-width {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .brix---badge-secondary-small-bold {
+    padding: 10px 16px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .brix---badge-wrapper-top-right {
+    top: 14px;
+    right: 14px;
+  }
+
+  .brix---3-columns-1-col-tablet {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---badge-secondary---tabs {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 14px 22px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .brix---mg-bottom-48px {
+    margin-bottom: 32px;
+  }
+
+  .brix---btn-secondary {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 17px;
+    line-height: 19px;
+  }
+
+  .brix---button-row-left {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .brix---buttons-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .brix---mg-bottom-16px {
+    margin-bottom: 15px;
+  }
+
+  .brix---cta-v9-card {
+    padding: 40px 32px;
+  }
+
+  .brix---cta-v9-section {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .brix---btn-secondary-white, .brix---btn-primary-white {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .brix---buttons-row-center {
+    flex-direction: column;
+  }
+
+  .brix---cta-v7-section {
+    padding-top: 72px;
+  }
+
+  .brix---cta-v2-floating-item-02 {
+    width: 40%;
+  }
+
+  .brix---cta-v2-floating-item-01 {
+    width: 50%;
+  }
+
+  .brix---cta-section {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .brix---text-200-bold, .brix---text-200 {
+    font-size: 15px;
+    line-height: 16px;
+  }
+
+  .brix---big-icon-left {
+    border-radius: 14px;
+    max-width: 56px;
+    margin-bottom: 16px;
+    margin-right: 0;
+  }
+
+  .brix---card-link-icon-wrapper {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 26px 24px;
+  }
+
+  .brix---social-icon-square-30px {
+    border-radius: 6px;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    min-height: 30px;
+    font-size: 14px;
+  }
+
+  .brix---social-media-grid-right---mbp-center {
+    grid-template-columns: repeat(auto-fit, 30px);
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .brix---text-area {
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .brix---text-area::placeholder {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .brix---card-form-v2 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .brix---mg-bottom-64px {
+    margin-bottom: 40px;
+  }
+
+  .brix---section-position-relative {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .brix---footer-small {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .brix---icon-square-36px {
+    border-radius: 6px;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    min-height: 30px;
+    font-size: 14px;
+  }
+
+  .brix---social-media-grid-right---t-center {
+    grid-template-columns: repeat(auto-fit, 30px);
+  }
+
+  .brix---footer-logo {
+    width: 100%;
+    max-width: 240px;
+  }
+
+  .brix---cta-v1-floating-item-02 {
+    width: 44%;
+  }
+
+  .brix---cta-v1-floating-item-01 {
+    width: 39%;
+  }
+
+  .brix---btn-secondary-white-2, .brix---btn-primary-white-2 {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .brix---button-row-left-2 {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .brix---buttons-row-center-2 {
+    flex-direction: column;
+  }
+
+  .brix---heading-h2-size-2 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .brix---cta-card {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .brix---container-default-2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .brix---section-small {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .brix---cta-v1-floating-item-3 {
+    width: 44%;
+  }
+
+  .brix---btn-primary-small {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .brix---header-nav-list-item-show-in-mbl, .brix---header-nav-list-item {
+    text-align: left;
+    width: 100%;
+  }
+
+  .brix---header-logo {
+    max-width: 84%;
+  }
+
+  .brix---container-default-3 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .brix---link-icon-right {
+    width: 18px;
+  }
+
+  .brix---top-bar-right-col {
+    margin-bottom: 0;
+  }
+
+  .navbar-2-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .brix---paragraph-default-tittle-2, .brix---paragraph-default-tittle-1-copy, .brix---paragraph-default-tittle-3-copy {
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .bold-text-2 {
+    font-size: 20px;
+  }
+
+  .bold-text-3 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .bold-text-4 {
+    font-size: 30px;
+  }
+
+  .brix---paragraph-default-3 {
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .brix---mg-bottom-8px-2 {
+    margin-bottom: 6px;
+  }
+
+  .brix---heading-h1-size-2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .brix---grid-2-columns-2-col-mbl-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---heading-h2-size-3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .brix---mg-bottom-24px-2 {
+    margin-bottom: 16px;
+  }
+
+  .brix---subtitle-2 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .brix---image-wrapper-br-24px-shadow-2 {
+    border-radius: 16px;
+  }
+
+  .brix---container-default-4 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .brix---heading-h2-size-2-3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .brix---paragraph-default-3-3, .brix---paragraph-default-3-2 {
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .brix---subtitle-2-2 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .brix---footer-logo-2 {
+    width: 100%;
+    max-width: 240px;
+  }
+
+  .brix---container-default-5 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .brix---btn-primary-full-width-2 {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .brix---icon-list-2 {
+    width: 24px;
+    margin-right: 8px;
+  }
+
+  .brix---divider-40px-2 {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .brix---paragraph-default-4 {
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .brix---heading-h1-size-3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .brix---heading-h3-size-2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .brix---btn-primary-white-full-width-2 {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .brix---badge-secondary-small-bold-2 {
+    padding: 10px 16px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .brix---badge-wrapper-top-right-2 {
+    top: 14px;
+    right: 14px;
+  }
+
+  .brix---3-columns-1-col-tablet-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---badge-secondary---tabs-2 {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 14px 22px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .brix---subtitle-3 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .brix---mg-bottom-48px-2 {
+    margin-bottom: 32px;
+  }
+
+  .brix---text-200-bold-2, .brix---text-201 {
+    font-size: 15px;
+    line-height: 16px;
+  }
+
+  .brix---mg-bottom-8px-3 {
+    margin-bottom: 6px;
+  }
+
+  .brix---big-icon-left-2 {
+    border-radius: 14px;
+    max-width: 56px;
+    margin-bottom: 16px;
+    margin-right: 0;
+  }
+
+  .brix---card-link-icon-wrapper-2 {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 26px 24px;
+  }
+
+  .brix---social-icon-square-30px-2 {
+    border-radius: 6px;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    min-height: 30px;
+    font-size: 14px;
+  }
+
+  .brix---social-media-grid-right---mbp-center-2 {
+    grid-template-columns: repeat(auto-fit, 30px);
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .brix---btn-primary-2 {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 17px;
+    line-height: 19px;
+  }
+
+  .brix---text-area-2 {
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .brix---text-area-2::placeholder {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .brix---input-2 {
+    min-height: 54px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .brix---input-2::placeholder {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .brix---card-form-v2-2 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .brix---mg-bottom-64px-2 {
+    margin-bottom: 40px;
+  }
+
+  .contact {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .brix---btn-primary-small-2 {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .brix---btn-slider-arrow-right---testimonial-v12 {
+    right: 31%;
+  }
+
+  .brix---btn-slider-arrow-left---testimonial-v12 {
+    left: 31%;
+  }
+
+  .brix---heading-h4-size {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .brix---mg-bottom-24px-3 {
+    margin-bottom: 16px;
+  }
+
+  .brix---card-testimonial-v13 {
+    padding-top: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .brix---btn-secondary-2 {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 17px;
+    line-height: 19px;
+  }
+
+  .brix---button-row-left-3 {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .brix---buttons-row-right---t-left {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .brix---heading-h2-size-4 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .brix---mg-bottom-16px-2 {
+    margin-bottom: 15px;
+  }
+
+  .brix---grid-top---text-2-buttons {
+    grid-row-gap: 16px;
+    grid-template-columns: 1fr;
+  }
+
+  .brix---container-default-6 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .brix---section-overflow-hidden {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .brix---buttons-row-center-3 {
+    flex-direction: column;
+  }
+
+  .brix---container-default-7 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .brix---floating-image-hero-v1---1 {
+    opacity: .2;
+    bottom: -5%;
+    left: -35%;
+  }
+
+  .brix---floating-image-hero-v1---2 {
+    display: none;
+  }
+
+  .brix---buttons-row-2 {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .brix---container-default-8 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .brix---section-hero-primary {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .brix---btn-secondary-white-3, .brix---btn-primary-white-3 {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .brix---grid-cta-v1 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---cta-v3-floating-item-02-2 {
+    max-width: 70%;
+    right: -33%;
+  }
+
+  .brix---cta-card-2 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .brix---container-default-9 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .brix---section-small-2 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .brix---btn-primary-small-3 {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .brix---header-nav-list-item-show-in-tablet-2, .brix---header-nav-list-item-left-2 {
+    text-align: left;
+    width: 100%;
+  }
+
+  .brix---header-logo-2 {
+    max-width: 84%;
+  }
+
+  .brix---header-logo-2.brix---logo-v14 {
+    max-width: 100%;
+  }
+
+  .brix---header-wrapper-rounded-2 {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  .brix---container-default-center {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .brix---header-wrapper-rounded-3 {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  .brix---icon-success-message-left-2 {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .brix---flex-horizontal---vertical-mbp-2 {
+    flex-direction: column;
+  }
+
+  .brix---btn-primary-small-input {
+    border: 1px solid var(--elements-webflow-library--accent--primary-1);
+    background-color: var(--elements-webflow-library--neutral--100);
+    color: var(--elements-webflow-library--accent--primary-1);
+    width: 100%;
+    margin-top: 12px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    position: static;
+  }
+
+  .brix---input-large-button-inside {
+    min-height: 64px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .brix---input-large-button-inside::placeholder {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .brix---cta-v20-left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .brix---text-300-bold {
+    font-size: 17px;
+    line-height: 21px;
+  }
+
+  .brix---content-inside-card-testimonial-video {
+    padding-top: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .brix---lightbox-video-icon-wrapper {
+    max-width: 70px;
+  }
+
+  .brix---heading-h2-size-5 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .brix---card-content-testimonial-v3 {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .brix---testimonial-v3-image-wrapper {
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 0;
+  }
+
+  .brix---card-testimonial-v3 {
+    flex-direction: column;
+  }
+
+  .brix---btn-secondary-white-4, .brix---btn-primary-white-4 {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .brix---button-row-left-4 {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .brix---buttons-row-right---t-left-2 {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .brix---heading-h2-size-6 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .brix---grid-cta-v1-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---cta-v3-floating-item-02-2-2 {
+    max-width: 70%;
+    right: -33%;
+  }
+
+  .brix---cta-card-3 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .brix---container-default-10 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .brix---section-small-3 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .community {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .brix---paragraph-default-4-2 {
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .brix---text-200-bold-3 {
+    font-size: 15px;
+    line-height: 16px;
+  }
+
+  .brix---icon-list-3 {
+    width: 24px;
+    margin-right: 8px;
+  }
+
+  .brix---icon-success-message-left-3 {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .brix---flex-horizontal---vertical-mbp-3 {
+    flex-direction: column;
+  }
+
+  .brix---btn-primary-small-input-2 {
+    border: 1px solid var(--elements-webflow-library--accent--primary-1);
+    background-color: var(--elements-webflow-library--neutral--100);
+    color: var(--elements-webflow-library--accent--primary-1);
+    width: 100%;
+    margin-top: 12px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    position: static;
+  }
+
+  .brix---input-large-button-inside-2 {
+    min-height: 64px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .brix---input-large-button-inside-2::placeholder {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .brix---heading-h2-size-7 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .brix---cta-v3-floating-item-02-2-3 {
+    max-width: 70%;
+    right: -33%;
+  }
+
+  .brix---cta-v16-card {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .brix---container-default-11 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .brix---section-small-5 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .brix---text-302, .brix---text-200-bold-4 {
+    font-size: 15px;
+    line-height: 16px;
+  }
+
+  .brix---mg-bottom-8px-4 {
+    margin-bottom: 6px;
+  }
+
+  .brix---paragraph-default-5 {
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .brix---heading-h4-size-2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .brix---avatar-image {
+    width: 100%;
+  }
+
+  .brix---avatar-circle-04 {
+    width: 56px;
+    min-width: 56px;
+    max-width: 56px;
+    height: 56px;
+    min-height: 56px;
+    max-height: 56px;
+  }
+
+  .brix---card-testimonial-v2 {
+    padding: 40px 24px;
+  }
+
+  .brix---3-columns-1-col-tablet-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .brix---heading-h2-size-8 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .brix---mg-bottom-16px-3 {
+    margin-bottom: 15px;
+  }
+
+  .brix---mg-bottom-48px-3 {
+    margin-bottom: 32px;
+  }
+
+  .brix---container-default-12 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .brix---card-testimonial-v3-2, .brix---card-testimonial-v3-3, .brix---card-testimonial-v3-4 {
+    flex-direction: column;
+  }
+
+  .brix---btn-primary-full-width-2-copy, .brix---btn-primary-full-width-2-3 {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .brix---btn-primary-white-full-width-2-4 {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .brix---btn-primary-full-width-2-5 {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .brix---btn-secondary-3, .brix---btn-primary-3 {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 17px;
+    line-height: 19px;
+  }
+
+  .brix---button-row-left-5 {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .brix---buttons-row-center-4 {
+    flex-direction: column;
+  }
+
+  .brix---lightbox-video-icon-wrapper-2 {
+    max-width: 70px;
+  }
+
+  .brix---image-wrapper-br-24px-shadow-3 {
+    border-radius: 16px;
+  }
+
+  .brix---mg-bottom-56px-2 {
+    margin-bottom: 32px;
+  }
+
+  .brix---heading-h2-size-9 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .brix---subtitle-4 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .brix---mg-bottom-16px-4 {
+    margin-bottom: 15px;
+  }
+
+  .brix---container-default-13 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .brix---text-200-bold-5 {
+    font-size: 15px;
+    line-height: 16px;
+  }
+
+  .brix---icon-list-4 {
+    width: 24px;
+    margin-right: 8px;
+  }
+
+  .brix---icon-success-message-left-4 {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .brix---flex-horizontal---vertical-mbp-4 {
+    flex-direction: column;
+  }
+
+  .brix---btn-primary-small-input-3 {
+    border: 1px solid var(--elements-webflow-library--accent--primary-1);
+    background-color: var(--elements-webflow-library--neutral--100);
+    color: var(--elements-webflow-library--accent--primary-1);
+    width: 100%;
+    margin-top: 12px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    position: static;
+  }
+
+  .brix---input-large-button-inside-3 {
+    min-height: 64px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .brix---input-large-button-inside-3::placeholder {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .brix---cta-v3-floating-item-02-2-4 {
+    max-width: 70%;
+    right: -33%;
+  }
+
+  .brix---cta-v16-card-2 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .popup {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .text-block {
+    font-size: 30px;
+  }
+
+  .brix---btn-primary-full-width-2-5-6 {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .community-2 {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+
+  .brix---text-200-bold-6 {
+    font-size: 15px;
+    line-height: 16px;
+  }
+
+  .brix---icon-list-5 {
+    width: 24px;
+    margin-right: 8px;
+  }
+
+  .brix---icon-success-message-left-5 {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .brix---flex-horizontal---vertical-mbp-5 {
+    flex-direction: column;
+  }
+
+  .brix---btn-primary-small-input-4 {
+    border: 1px solid var(--elements-webflow-library--accent--primary-1);
+    background-color: var(--elements-webflow-library--neutral--100);
+    color: var(--elements-webflow-library--accent--primary-1);
+    width: 100%;
+    margin-top: 12px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    position: static;
+  }
+
+  .brix---input-large-button-inside-4 {
+    min-height: 64px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .brix---input-large-button-inside-4::placeholder {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .brix---heading-h2-size-10 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .brix---cta-v3-floating-item-02-2-5 {
+    max-width: 70%;
+    right: -33%;
+  }
+
+  .brix---cta-v16-card-3 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .newsletter {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .brix---section-small-6 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .header-2 {
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
+  }
+
+  .brix---link-icon-right-2 {
+    width: 18px;
+  }
+
+  .brix---button-large-row-left {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .brix---buttons-large-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .brix---heading-h2-size-11 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .brix---cta-v3-floating-item-02-2-6 {
+    max-width: 70%;
+    right: -33%;
+  }
+
+  .brix---cta-card-4 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .brix---container-default-15 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .popuop---invest-e-capital {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .brix---paragraph-default-tittle-1-2-3 {
+    font-size: 17px;
+    line-height: 28px;
+  }
+}
+
+#w-node-_83ab9ab6-3a7e-6dd1-97f2-527480b9abac-d9c3fe65 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-fd9d5a56-a0d8-3787-8a97-e85fc728e369-d9c3fe65 {
+  align-self: center;
+  justify-self: start;
+}
+
+#w-node-_20db753d-a6ff-70a8-bfad-95261bac014e-d9c3fe65 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_8589f942-721a-d8c1-9931-7ef930aa2f47-30aa2f43 {
+  justify-self: start;
+}
+
+#w-node-_20db753d-a6ff-70a8-bfad-95261bac014e-7de3cf58 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+@media screen and (max-width: 767px) {
+  #w-node-_8589f942-721a-d8c1-9931-7ef930aa2f47-30aa2f43 {
+    justify-self: center;
+  }
+}
+
+
